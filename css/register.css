@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+/*输入提示为浅灰色*/
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #CDCFDB; 
+font-weight: 100;
+font-family: "微软雅黑";
+}
+input:-ms-input-placeholder {
+color: #CDCFDB;
+font-weight: 100;
+font-family: "微软雅黑";
+}
+input::-webkit-input-placeholder {
+color: #CDCFDB;
+font-weight: 100;
+font-family: "微软雅黑";
+}
+
+
+/*注册成功*/
+.register_succ{
+	width:100%;
+	height:13.34rem;
+	background-color:#fff;	
+}
+.success_icon{
+	width:100%;
+	height:4rem;
+	padding-top:2.5rem;
+}
+.success_icon img{
+	display:block;
+	width:2.36rem;
+	margin:0 auto;
+}
+.success_icon span{
+	display:block;
+	width:100%;
+	margin-top:0.4rem;
+	text-align:center;
+	font-size:0.36rem;
+}
+
+.next_btn{
+	width:6.9rem;
+	height:1rem;
+	margin:1.9rem 0.3rem;
+}
+.next_btn .visit{
+	display:block;
+	float:left;
+	border-radius:0.05rem;
+	width:2.48rem;
+	height:0.98rem;
+	line-height:0.98rem;
+	font-size:0.36rem;
+	text-align:center;
+	color:#0077ee;
+	border:solid 0.01rem #0077ee;
+}
+.perfect_infor{
+	display:block;
+	float:right;
+	border-radius:0.05rem;
+	width:4.18rem;
+	height:0.98rem;
+	line-height:0.98rem;
+	font-size:0.36rem;
+	text-align:center;
+	color:#fff;
+	background-color:#0077ee;
+	
+}
+
+/*企业会员资料*/
+
+
+.basic_title{
+	float:left;
+	width:auto;
+	font-size:0.28rem;
+	line-height:0.7rem;
+	margin-left:0.3rem;
+}
+.basic_title .prompt{
+	color:#FF6A54;
+	line-height:0.7rem;
+	font-size:0.24rem;
+}
+.basic_infor{
+	width:100%;
+	height:auto;
+	margin-top:0.3rem;
+	over-flow:hidden;
+}
+.infor{
+	
+	width:100%;
+	height:auto;
+	background:#fff;
+	font-size:0.28rem;
+	overflow:hidden;
+	
+}
+
+.infor1{
+	float:left;
+	width:7.2rem;
+	margin-left:0.3rem;
+	height:0.98rem;
+	border-bottom:solid 0.01rem #e5e4ea;
+}
+.infor1 .infor_title{
+	display:block;
+	line-height:0.98rem;
+	float:left;
+	width:auto;
+}
+.infor1 .prompt1{
+	display:block;
+	float:left;
+	color:#FF6A54;
+	margin-left:0.1rem;
+	margin-top:0.37rem;
+	font-size:0.24rem;
+}
+.infor1 p{
+	display:block;
+	float:right;
+	font-weight:600;
+	line-height:0.98rem;
+	margin-right:0.3rem;
+	width:auto;
+}
+.infor1 input[type="text"]{
+	margin-top:0.29rem;
+	margin-right:0.3rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	width: auto;
+	font-size: 0.3rem;
+}
+.file {
+	float:right;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #CDCFDB;
+	margin-right:0.3rem;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 0.98rem;
+}
+.file input {
+    position: absolute;
+    font-size:0.28rem;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file span{
+	width:1.4rem;
+	display:block;
+	float:left;
+	margin-right:0.2rem;
+	text-align:right;
+}
+.file img{
+	width:0.4rem;
+	display:block;
+	margin-top:0.28rem;
+	float:left;
+}
+
+
+.infor2{
+	float:left;
+	width:7.2rem;
+	margin-left:0.3rem;
+	height:auto;
+	overflow:hidden;
+	border-bottom:solid 0.01rem #e5e4ea;
+	
+}
+.infor2 input[type="radio"]{
+	margin-right: 0.1rem;
+	display:block;
+	float:left;
+}
+
+.infor2 .certificate{
+	dispaly:block;
+	float:left;
+	margin-top:0.3rem;
+	margin-bottom:0.2rem;
+	width:53%;
+	}
+.infor2 .certificate label{
+	width:86%;
+	margin-bottom:0.2rem;
+	
+}
+.infor2 .file {
+	float:right;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #CDCFDB;
+	margin-right:0.3rem;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 0.98rem;
+	margin-top:0.3rem;
+}
+.infor2 .file2 {
+	float:right;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #2e2b51;
+	margin-right:0.3rem;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 0.98rem;
+}
+.file2 span{
+	width:1.4rem;
+	display:block;
+	float:left;
+	margin-right:0.2rem;
+	text-align:right;
+}
+.file2 img{
+	width:0.4rem;
+	display:block;
+	margin-top:0.28rem;
+	float:left;
+}
+
+.file2 input {
+    position: absolute;
+    font-size:0.28rem;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.infor2 .seal{
+	display:block;
+	width:60%;
+	float:left;
+	margin-bottom:0.2rem;
+}
+.infor2 .seal p{
+	margin-top:0.3rem;
+	}
+.infor2 .seal .download{
+	display:block;
+	width:50%;
+	margin-top:0.1rem;
+	float:left;
+	color:#0077ee;
+	font-size:0.24rem;
+	text-decoration:none;
+}
+.infor2 .seal .download img{
+	display:block;
+	float:left;
+	width:0.4rem;
+	margin-right:0.4rem;
+	color:#0077ee;
+	font-size:0.24rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

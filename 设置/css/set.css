@@ -1,0 +1,342 @@
+
+/*设置页面样式*/
+.home-menu li{
+	margin: 0.3rem 0 0;
+	background-color: #FFFFFF;
+	font-size: 0.3rem;
+}
+.home-menu li a{
+	display: block;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	color:#2E2B51;
+	padding: 0 0.3rem;
+}
+
+.home-menu li a img{
+	margin-top: 0.3rem;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.home-menu li.explain{
+	margin: 0;
+	font-size: 0.24rem;
+	color: #636A7D;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	padding:0 0.3rem;
+	background-color: transparent;
+}
+
+/*退出账户按钮特征*/
+.exit-btn{
+	background-color: #FFFFFF !important;
+	color: #FF6A54 !important;
+}
+
+/*编辑地址*/
+.edit-addr li{
+	margin: 0.3rem 0;
+	background-color: #FFFFFF;
+	font-size: 0.3rem;
+	line-height: 1.0rem;
+}
+.edit-addr li.txt{
+	padding: 0.3rem;
+	overflow: auto;
+	zoom: 1;
+}
+.edit-addr li p{
+	height: 1.0rem;
+	line-height: 1.0rem;
+	padding: 0 0.3rem;
+}
+.edit-addr li p input[type="text"]{
+	height: 1.0rem;
+	line-height: 1.0rem;
+	width: 5.0rem;
+	font-weight: bold;
+	font-size: 0.3rem;
+	float: right;
+	text-align: right;
+}
+.edit-addr li p input[type="text"].readonly{
+	padding-right: 0.5rem;
+	background: url(../../img/back_g.png) no-repeat;
+	background-position: right center;
+	background-size: 0.4rem 0.4rem; 
+}
+.edit-addr li textarea{
+	padding: 0.3rem;
+	line-height: 0.3rem;
+	width: 5.6rem;
+	font-size: 0.3rem;
+}
+
+/*地址管理*/
+li.single-addr{
+	background-color: #FFFFFF;
+	border-radius: 0.05rem;
+	font-size: 0.28rem;
+	color: #2E2B51;
+	margin: 0.3rem;
+}
+.single-addr .contacts{
+	padding: 0 0.3rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.single-addr .addr{
+	padding: 0 0.3rem 0.2rem;
+	color: #68677C;
+	border-bottom: 0.02rem solid #E5E4EA;
+	line-height: 0.5rem;
+}
+.single-addr .handle{
+	height: 0.6rem;
+	line-height: 0.6rem;
+	padding: 0.3rem;
+	vertical-align: middle;
+}
+.single-addr .handle input[type="radio"]{
+	vertical-align: middle;
+	margin-right: 0.15rem;
+}
+.single-addr .handle .handle-btn{
+	height: 0.6rem;
+	line-height: 0.6rem;
+	width: 1.35rem;
+	text-align: center;
+	border: 0.02rem solid #A4A8BF;
+	border-radius: 0.05rem;
+	color: #2E2B51;
+	float: right;
+	margin-left: 0.3rem;
+}
+
+/*邮箱验证*/
+.frm{
+	padding: 0.1rem 0.3rem;
+}
+.frm p{
+	line-height: 1.0rem;
+	font-size: 0.3rem;
+	overflow: auto;
+	zoom: 1;
+	margin: 0.3rem 0;
+	
+}
+.frm p input{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.3rem 0.24rem;
+	width: 4.5rem;
+	font-size: 0.28rem;
+	float: left;
+}
+
+.frm p label{
+	display: inline-block;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	width: 1.9rem;
+	vertical-align: middle;
+	float: left;
+}
+.frm p label.log-img{
+	text-align: center;
+}
+.frm p label>img{
+	width: 0.4rem;
+	vertical-align: middle;
+}
+
+/*验证码栏样式*/
+.frm .vercode{
+	height: 1.0rem;
+	
+}
+.frm .code{
+	width: 4.2rem;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	font-size: 0.3rem;
+	overflow: auto;
+	zoom: 1;
+	height: 1.0rem;
+	float: left;
+}
+.frm .code input{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.3rem 0.24rem;
+	width: 2.7rem;
+	font-size: 0.28rem;
+	float: left;
+}
+.frm .code label{
+	display: inline-block;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	width: 1.0rem;
+	vertical-align: middle;
+	float: left;
+}
+.frm .code-img{
+	width: 2.3rem;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	float: right;
+	color: #CCCEDB;
+	font-size: 0.36rem;
+	text-align: center;
+}
+.frm .code-txt{
+	width: 2.3rem;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	float: right;
+	border-radius: 0.05rem;
+	border: 0.02rem solid #CCCEDB;
+	color: #CCCEDB;
+	font-size: 0.24rem;
+	text-align: center;
+}
+.frm .code-img img{
+	width: 100%;
+	height: 100%;
+}
+
+/*按钮样式*/
+.frm .btn{
+	display: block;
+	padding: 0;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	font-size: 0.36rem;
+	text-align: center;
+	width: 6.84rem;
+	margin: 0 auto;
+	border: 0.02rem solid #0077EE;
+	border-radius: 0.05rem;
+	margin-top: 0.5rem;
+}
+.frm .btn.blue{
+	background-color: #0077EE;
+	color: #FFFFFF;
+}
+.frm .btn.white{
+	background-color: #FFFFFF;
+	color: #0077EE;
+}
+
+/*纤细样式*/
+.frm .prompt{
+	height: 2.0rem;
+	margin: 0.3rem;
+	line-height: 0.5rem;
+}
+.frm .prompt p.pro{
+	line-height: 0.5rem;
+	padding: 0;
+	margin: 0;
+}
+.frm p.big-txt{
+	line-height: 1.2rem;
+	height: 1.2rem;
+	font-size: 0.7rem;
+	text-align: center;
+}
+.frm p.small-txt{
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+	text-align: center;
+	color: #636A7D;
+	width: 80%;
+	margin: 0 auto 0.5rem;
+}
+.frm p.small-txt2{
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+	color: #636A7D;
+	margin: 0.3rem 0;
+}
+
+/*议价反馈表单*/
+.feed-frm .item{
+	margin: 0.3rem 0;
+	padding: 0 0.3rem;
+	line-height: 1.0rem;
+	font-size: 0.3rem;
+	background-color: #FFFFFF;
+	overflow: auto;
+	zoom: 1;
+}
+.feed-frm .item input[type="text"]{
+	width: 4.0rem;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	float: right;
+	text-align: right;
+	font-size: 0.3rem;
+	font-weight: bold;
+}
+.feed-frm .item input[type="text"].select{
+	padding-right: 0.5rem;
+	background: url(../../img/back_g.png) no-repeat right center;
+	background-size: 0.4rem 0.4rem;
+}
+.feed-frm .row{
+	height: 1.0rem;
+	line-height: 1.0rem;
+}
+.feed-frm .item textarea{
+	width: 100%;
+	line-height: 0.5rem;
+	font-size: 0.3rem;
+}
+.feed-frm .input-img{
+	background-color: #FFFFFF;
+	padding-bottom: 0.3rem;
+	padding-left: 0.3rem;
+	width: 7.2rem;
+	font-size: 0.3rem;
+	overflow: auto;
+	zoom: 1;
+}
+.feed-frm .input-img img{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0.3rem 0.3rem 0 0;
+	float: left;
+	/*border: 0.03rem solid #CCCEDB;*/
+}
+
+.fileinput-btn{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: url(../../img/add-img.png) no-repeat;
+	margin: 0.3rem 0.3rem 0 0;
+}
+.feed-frm .input-img .fileinput-btn img{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0;
+	border: none;
+}
+.feed-frm .input-img .imgs{
+	width: auto;
+}
+
+.fileinput-btn input{
+    position:absolute;
+    right: 0px;
+    top: 0px;
+	width: 1.5rem;
+	height: 1.5rem;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+}

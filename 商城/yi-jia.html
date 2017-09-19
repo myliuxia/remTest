@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>议价</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/yi-jia.css" />
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/add-subtract.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<header class="myheader blue">
+			<a class="left" href="javascript:;">
+				<img src="../img/back_w.png"/>
+			</a>
+			<span class="bold">议价</span>
+			<span class="right" style="width:0.8rem; height: 100%;"></span>
+		</header>
+		
+		<div class="content">
+		<!--议价项目信息-->
+		<div class="need">
+			<div class="need-left">
+				<p>急需55颗0.3克拉裸钻</p>
+				<span>9月7日发布</span>
+			</div>
+			<div class="need-right">
+				<p>￥5326/ct</p>
+			</div>
+		</div>
+		<!--议价类容表单-->
+		<form action="javascript:;" method="post">
+			<div class="input-text">
+				<p class="borderBottom">
+					<label for="price">商议价格</label>
+					<input type="text" name="price" id="price" placeholder="请输入单价"/>
+					<label class="right">元/克拉</label>
+				</p>
+				
+				<p>
+					<label for="num">商议数量</label>
+					<input type="text" name="num" id="num" placeholder="请输入数量"/>
+					<label class="right">颗</label>
+				</p>
+			</div>
+			<div class="input-text">
+				<p>
+					<label>备款/备货期限</label>
+					<a class="right" href="date-select.html">></a>
+					<label class="right bold" id="del-date">顺延5小时交货</label>
+					
+				</p>
+			</div>
+			<div class="input-text">
+				<p>
+					<label for="price">买方履约保证金</label>
+					<a class="right add" href="javascript:;"><img src="../img/add.png"/></a>
+					<label class="right bold number" id="buyer-money">120</label>
+					<label class="right bold">￥</label>
+					<a class="right subtract" href="javascript:;"><img src="../img/minus.png"/></a>
+					
+				</p>
+			</div>
+			
+			<div class="input-text">
+				<p>
+					<label for="price">卖方履约保证金</label>
+					<a class="right add" href="javascript:;"><img src="../img/add.png"/></a>
+					<label class="right bold number" id="seller-money">120</label>
+					<label class="right bold">￥</label>
+					<a class="right subtract" href="javascript:;"><img src="../img/minus.png"/></a>
+					
+				</p>
+			</div>
+			
+			<div class="input-text">
+				<p class="borderBottom">
+					<label for="other">附加条款</label>
+				</p>
+				<textarea name="other" id="other" rows="6" value="">
+					
+				</textarea>
+			</div>
+			
+			<div class="myfooter-placeholder"></div>
+			<div class="footer-butten">
+				<input class="big" type="submit" value="执行议价" />
+			</div>
+		</form>
+		</div>
+	</body>
+</html>

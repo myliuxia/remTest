@@ -1,0 +1,88 @@
+/*排序条件*/
+.screen{
+	position: fixed;
+	z-index: 20;
+	top:0.9rem;
+	width: 7.50rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	
+	background-color: #FFFFFF;
+}
+.screen a{
+	font-size: 0.30rem;
+	display: block;
+	float: left;
+	width: 33%;
+	color: #A3A7BE;
+	text-align: center;
+}
+.screen a.active{
+	color: #0077EE;
+	height: 0.86rem;
+	border-bottom: 0.04rem solid #0077EE;
+}
+.screen a span img{
+	width: 0.11rem;
+}
+
+/*结束合同申请列表*/
+.pact-table{
+	background-color: #FFFFFF;
+	font-size: 0.28rem;
+	border-radius: 0.05rem;
+	margin: 0.2rem;
+}
+.pact-table .table-header{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-bottom: 0.02rem solid #E5E4EA;
+	color: #A3A7BE;
+	padding: 0 0.7rem 0 0.3rem;
+}
+.pact-table .table-header p{
+	
+}
+.pact-table .pact-list{
+	height: 1.0rem;
+	line-height: 1.0rem;
+	padding:0 0.3rem;
+	vertical-align: middle;
+	color: #2E2B51;
+	font-size: 0.28rem;
+	border-bottom: 0.02rem solid #E5E4EA;
+}
+.pact-table .pact-list a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	color: #2E2B51;
+}
+.pact-table .pact-list img{
+	width: 0.4rem;
+	height: 0.4rem;
+	vertical-align: middle;
+}
+
+/*结束合同详情页面*/
+.xp-module{
+	background-color: #FFFFFF;
+	margin: 0.2rem;
+	font-size: 0.28rem;
+	color: #2E2B51;
+	border-radius: 0.05rem;
+}
+.xp-module p{
+	height: 1.0rem;
+	line-height: 1.0rem;
+	padding: 0 0.3rem;
+}
+.xp-module p input[type="text"]{
+	height: 1.0rem;
+	line-height: 1.0rem;
+	float: right;
+	text-align: right;
+	font-size: 0.28rem;
+	color: #2E2B51;
+	font-weight: bold;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>交易流水</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zjgl.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lCalendar.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/lCalendar.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			.content{
+					padding-top: 1.8rem;
+				}
+		</style>
+	</head>
+	<body>
+		<header class="myheader blue">
+			<a class="left" href="zjgl.html">
+				<img src="../img/back_w.png"/>
+			</a>
+			<span class="bold">交易流水</span>
+			<span class="right" style="width:0.8rem; height: 100%;"></span>
+		</header>
+		<!--筛选菜单-->
+		<div class="screen">
+			<a class="ratio5 active" id="btn1" href="javascript:;">当前</a>
+			<a class="ratio5" id="btn2" href="javascript:;">自定义查询</a>
+		</div>
+		<div class="content" >
+			<!--交易流水列表-->
+			<ul class="Infobar" id="con1">
+				<li class="tit">
+					查询日期：<span>2016年7月1日-2016年7月1日</span>
+				</li>
+				<li class="info-list">
+					<p class="borderBottom">
+						<a class="title" href="jyls-mx.html">
+							<span class="left">业务名称:珠宝商入金</span>
+							<span class="img right"><img src="../img/back_g.png"/></span>
+						</a>
+					</p>
+					<p>
+						<span class="tit-s">发生金额：</span>
+						<span class="val">￥523.235.654.00</span>
+					</p>
+					<p>
+						<span class="tit-s">资金余额：</span>
+						<span class="val">￥123.235.654.00</span>
+					</p>
+					<p>
+						<span class="tit-s">发生日期：</span>
+						<span class="val">2016年5月30日</span>
+					</p>
+				</li>
+				<li class="info-list">
+					<p class="borderBottom">
+						<a class="title" href="jyls-mx.html">
+							<span class="left">业务名称:珠宝商入金</span>
+							<span class="img right"><img src="../img/back_g.png"/></span>
+						</a>
+					</p>
+					<p>
+						<span class="tit-s">发生金额：</span>
+						<span class="val">￥523.235.654.00</span>
+					</p>
+					<p>
+						<span class="tit-s">资金余额：</span>
+						<span class="val">￥123.235.654.00</span>
+					</p>
+					<p>
+						<span class="tit-s">发生日期：</span>
+						<span class="val">2016年5月30日</span>
+					</p>
+				</li>
+			</ul>
+			<!--自定义查询流水-->
+			<ul class="home-menu" id="con2" hidden="hidden">
+				<li class="input">
+					<p class="borderBottom">
+						<label for="begin-date">开始时间</label>
+						<input type="text" name="begin-date" id="begin-date" placeholder="请选择开始日期" 
+							readonly="" data-lcalendar="2015-01-11,2025-01-01"/>
+					</p>
+					<p>
+						<label for="end-date">结束时间</label>
+						<input type="text" name="end-date" id="end-date" placeholder="请选择结束日期" 
+							readonly="" data-lcalendar="2015-01-01,2025-01-01"/>
+					</p>
+					<div class="footer-butten">
+						<input class="big" type="button" value="查询"/>
+					</div>
+				</li>
+			</ul>
+			
+		</div>
+		<script type="text/javascript">
+			
+		
+			$(function(){
+				$('#btn1').on('click',function(){
+					$(this).addClass('active');
+					$(this).siblings().removeClass('active');
+					$('#con2').hide();
+					if($('#con1').is(":hidden")){
+						$('#con1').show();
+					}
+				});
+				$('#btn2').on('click',function(){
+					$(this).addClass('active');
+					$(this).siblings().removeClass('active');
+					$('#con1').hide();
+					if($('#con2').is(":hidden")){
+						$('#con2').show();
+					}
+				});
+			})
+		</script>
+		<script>
+			var calendar1 = new lCalendar();
+		    calendar1.init({
+		        'trigger': '#begin-date',
+		        'type': 'date'
+		    })
+		    var calendar2 = new lCalendar();
+		    calendar2.init({
+		        'trigger': '#end-date',
+		        'type': 'date'
+		    })
+		</script>
+		
+	</body>
+</html>

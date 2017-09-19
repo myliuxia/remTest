@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>交收合同管理-单个</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jsht.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/init.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="myheader blue">
+			<a class="left" href="jsht-dg.html">
+				<img src="../img/back_w.png"/>
+			</a>
+			<span class="bold">交收合同详情</span>
+			<a class="right font-size30" style="width:0.8rem; height: 100%;" href="jsht-spxq.html">
+				详情
+			</a>
+		</header>
+		
+		<div class="content" >
+			<p class="state">
+				<span class="font-orange">温馨提示:</span>
+				当前合同正等待您转入货款，请于2016年8月30日前转入货款，以免导致系统自动关闭。
+			</p>
+			
+			<div class="deal-flow">
+				<ul>
+					<li class="deal-line end">
+						<span class="con">合同生成</span>
+						<span class="line"></span>
+					</li>
+					<li class="deal-line end">
+						<span class="con">支付保证金</span>
+						<span class="line"></span>
+					</li>
+					<li class="deal-line begin">
+						<span class="con">转入仓单<br/>支付货款</span>
+						<span class="line"></span>
+					</li>
+					<li class="deal-line wait">
+						<span class="con">交易完成</span>
+					</li>
+				</ul>
+			</div>
+			<div class="pact-flow">
+				<p class="pact-tit">合同跟踪</p>
+				<ul>
+					<li class="pact-col end">
+						<div class="pact-con">
+							<p class="con-name">双方满意条件，订单转成交！</p>
+							<p class="con-time">2016-08-30 16:06:25</p>
+						</div>
+						<span class="col"></span>
+					</li>
+					<li class="pact-col begin">
+						<div class="pact-con">
+							<p class="con-name">支转入仓单，仓单编号：546321</p>
+							<p class="con-time">2016-08-30 16:06:25</p>
+						</div>
+						<span class="col"></span>
+					</li>
+					<li class="pact-col wait">
+						<div class="pact-con">
+							<p class="con-name">正在生成合同，并转入仓单。</p>
+							<p class="con-time">2016-08-30 16:06:25</p>
+						</div>
+						<span class="col"></span>
+					</li>
+					<li class="pact-col wait">
+						<div class="pact-con">
+							<p class="con-name">支付履约保证金，支付金额78.20</p>
+							<p class="con-time">2016-08-30 16:06:25</p>
+						</div>
+					</li>
+				</ul>
+				
+			</div>
+			
+		</div>
+		
+		<footer class="footer-btn">
+			<a class="btn right" href="javascript:;">关闭交易</a>
+			<a class="btn right"  href="javascript:;">转入贷款</a>
+		</footer>
+		
+	</body>
+</html>

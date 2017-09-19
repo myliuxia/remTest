@@ -1,0 +1,99 @@
+/*议价项目信息*/
+.need{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 0.9rem;
+	padding: 0.3rem 0;
+}
+.need-left{
+	width: 4.2rem;
+	margin-left: 0.2rem;
+	float: left;
+}
+.need-left p{
+	display: block;
+	width: 100%;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	overflow: hidden;
+	font-size: 0.3rem;
+	color:#2E2B51;
+}
+.need-left span{
+	float: left;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+	color: #A4A8BF;
+}
+.need-right{
+	width: 2.8.0rem;
+	margin-right: 0.2rem;
+	float: right;
+}
+.need-right p{
+	text-align: right;
+	width: 100%;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	overflow: hidden;
+	font-size: 0.34rem;
+	color:#0077EE;
+}
+
+/*议价内容*/
+
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #CDCFDB; 
+}
+input:-ms-input-placeholder {
+	color: #CDCFDB;
+}
+input::-webkit-input-placeholder {
+	color: #CDCFDB;
+}
+.input-text{
+	margin: 0.2rem;
+	border-radius: 0.05rem;
+	background-color: #FFFFFF;
+}
+.input-text p{
+	
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.3rem;
+	font-size: 0.28rem;
+	color: #2E2B51;
+}
+.input-text p.borderBottom{
+	border-bottom: 0.02rem solid #E5E4EA;
+}
+.input-text p label{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	width: auto;
+}
+.input-text p input{
+	font-size: 0.28rem;
+	padding: 0 0.1rem;
+	border: none;
+	height: 0.4rem;
+	width: auto;
+}
+.input-text p a{
+	color: #2E2B51;
+	padding: 0 0.2rem;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.input-text p a img{
+	width: 0.3rem;
+	margin: 0.05rem;
+}
+.input-text textarea{
+	border: none;
+	margin: 0.3rem;
+	width: 6.4rem;
+	line-height: 0.4rem;
+	font-size: 0.28rem;
+}

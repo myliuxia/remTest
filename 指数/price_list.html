@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>指数列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/price.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript"></script>
+		<script src="../js/init.js" type="text/javascript"></script>
+		<script src="../js/search.js" type="text/javascript"></script>
+		<style type="text/css">
+			.content{padding-top: 1.8rem;}
+		</style>
+	</head>
+	<body>
+		<header class="myheader blue">
+			<div class="mysearch" id="serch" style="display: none;">
+ 			<a href="javascript:;" id="search-btn">
+ 				<img src="../img/search.png"/></a>
+ 				<input type="text" name="search_name" id="search_name" placeholder="品种名称" onfocus="onsreachfocus()" onblur="onsreachblur()" value="" />
+				<a href="javascript:;" id="clear" onclick="onClearClick()"><img src="../img/delete.png"/></a>
+				<input type="button" value="取消" onclick="hideSreach()" />
+	
+ 			</div>
+ 			
+ 			<div class="headertitle">
+ 			
+			<a class="left" href="javascript:showSreach();">
+				<img src="../img/search.png"/>
+			</a>
+			 <span class="bold">指数行情</span>
+			 <a class="right" href="javascript:;">
+				<span style="display:block;width:0.4rem; height: 0.4rem;"></span>
+			</a>
+			</div>
+		</header>
+		
+		<div class="price-screen">
+			<a class="screen-btn" href="javascript:;" >
+				最新
+				<span>
+					<img id="time-nor" src="../img/nor_sort.png">
+					<img id="time-down" style="display: none;" src="../img/down_sort.png">
+					<img id="time-up" style="display: none;" src="../img/up_sort.png"><!-- down_sort/up_sort-->
+				</span>
+			</a>
+			<a class="screen-btn" href="javascript:;">
+				涨幅
+				<span>
+					<img id="change-nor" src="../img/nor_sort.png">
+					<img id="change-down" style="display: none;" src="../img/down_sort.png">
+					<img id="change-up" style="display: none;" src="../img/up_sort.png">
+				</span>
+			</a>
+		</div>
+		
+		<div class="content">
+			<div class="price">
+				<a href="javascript:;">
+					<div class="var">
+						<p class="var-name">0.40FLDVG</p>	
+						<span class="var-id">代码：100082</span>
+					</div>
+					<div class="val rise">
+						<p class="val-name">128394.89</p>	
+						<span class="rou">+1.90%</span>
+					</div>
+				</a>
+			</div>
+			
+			<div class="price">
+				<a href="javascript:;">
+					<div class="var">
+						<p class="var-name">0.40FLDVG</p>	
+						<span class="var-id">代码：100082</span>
+					</div>
+					<div class="val drop">
+						<p class="val-name">128394.89</p>	
+						<span class="rou">-1.90%</span>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<footer class="myfooter">
+			<a href="../index.html">
+				<span><img src="../img/grey_home.png"/></span>
+				<p>首页</p>
+			</a>
+			<a class="active" href="onsell.html">
+				<span><img src="../img/blue_store.png"/></span>
+				<p>商城</p>
+			</a>
+			<a href="../发供求/fgq.html">
+				<div class="round">
+					<span><img src="../img/white_issue.png"/></span>
+					<p>发供求</p>
+				</div>
+			</a>
+			<a href="javascript:;">
+				<span><img src="../img/grey_quote.png"/></span>
+				<p>行情</p>
+			</a>
+			<a href="../mine.html">
+				<span><img src="../img/grey_mine.png"/></span>
+				<p>我的</p>
+			</a>
+		</footer>
+		<script type="text/javascript">
+			$(function(){
+				$(".screen-btn").click(function(){
+					$(".screen-btn").removeClass("active");
+					if($(this).hasClass("active")){
+						if($('#change-down').is(":hidden")){
+							$('#change-up').hide();
+							$('#change-down').show();
+							/*降序查询数据*/
+						}else{
+							$('#change-down').hide();
+							$('#change-up').show();
+							/*升序查询数据*/
+						}
+					}else{
+						$(this).addClass("active");
+						$('#change-nor').hide();
+						$('#change-down').show();
+						/*降序查询数据*/
+					}
+				});
+			})
+		</script>
+	</body>
+</html>

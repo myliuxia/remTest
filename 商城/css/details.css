@@ -1,0 +1,372 @@
+@charset "utf-8";
+/* CSS Document */
+.center .title{ 
+	color:#2e2b51;
+	font-size:0.36rem;
+	line-height:0.9rem;
+	font-weight:600;
+}
+
+.propic{ 
+	width:100%; 
+	height:3.5rem;	
+}
+.propic img{
+	display:block;
+	width:2.62rem;
+	height:2.62rem;
+	margin:0.44rem auto;
+}
+
+/*钻石名称、价格、数量*/
+.pro_messa{
+	width:7.1rem;
+	height:2.3rem;
+	border-radius: 0.05rem;
+	margin:0.2rem;
+	background-color: #FFFFFF;
+	
+}
+
+.pro_name_price{
+	width:6.5rem;
+	margin:0.3rem 0.3rem;
+}
+.pro_name_price p{
+	display:block;
+	float:left;
+	width:6.5rem;
+	font-size:0.36rem;
+	color:#2e2b51;	
+	margin:0.3rem 0 0.2rem;
+}
+.pro_name_price span{
+	display:block;
+	float:left;
+	width:6.5rem;
+	font-size:0.42rem;
+	font-weight:600;
+	color:#0077ee;	
+	margin: 0;
+}
+.pro_time_num{
+	width:6.5rem;
+	margin:0.3rem;	
+}
+.pro_time_num span{
+	display:block;
+	margin:0.2rem 0;
+	color:#636a7d;
+	font-size:0.24rem;
+}
+
+/*钻石参数*/
+.diamond_para{
+	width:7.1rem;
+	height:auto;
+	margin:0.2rem;
+	border-radius: 0.05rem;
+	background:#fff;	
+}
+.para_title{	
+	width:100%;
+	height:0.96rem;
+	border-bottom:solid 0.01rem #e7e7ef;	
+	font-size:0.28rem;
+	line-height:0.96rem;
+	color:#2e2b51;
+}
+.para_title span{
+	display:block;
+	line-height:0.96rem;
+	padding-left:0.78rem;
+	background:url(../../img/black_diamond.png) no-repeat;	
+	background-position: left 0.3rem center;
+	background-size: 0.4rem 0.4rem;
+}
+.parameter{
+	width:6.9rem;
+	margin:0 0.1rem;
+	height:auto;
+	overflow:hidden;
+}
+.dia_para1{
+	float:left;
+	width:2.2rem;
+	height:1.5rem;
+	margin:0.3rem 0.1rem 0.3rem 0;
+	
+}
+.dia_para1 img{
+	display:block;
+	width:0.8rem;
+	height:0.8rem;
+	float:left;
+	margin-right:0.7rem;
+	margin-left:0.7rem;
+}
+.dia_para1 span{
+	display:block;
+	width:100%;;
+	text-align:center;
+	line-height:0.4rem;
+	float:left;
+	font-size:0.28rem;
+	color:#2e2b51;
+}
+
+/*证书*/
+.certi{
+	width:7.1rem;
+	height:0.98rem;
+	line-height:0.98rem;
+	margin:0.2rem;
+	border-radius: 0.05rem;
+	background:#fff;	
+}
+.certi span{
+	display:block;
+	width:auto;
+	float:left;
+	text-indent:0.3rem;
+	font-size:0.28rem;
+	color:#2e2b51;
+	line-height:0.98rem;
+}
+.certi a{
+	display:block;
+	float:right;
+	width:0.4rem;
+	height:0.4rem;
+	margin-right:0.2rem;
+	margin-top:0.29rem;
+	background:url(../../img/back_g.png) no-repeat;
+	background-position: center;
+	background-size: 0.4rem 0.4rem;
+}
+
+
+/*信息编号、备款备货、保证金信息*/
+.note{
+	width:7.1rem;
+	height:3.4rem;
+	line-height:0.8rem;
+	margin:0.2rem 0.2rem 1.2rem 0.2rem;
+	border-radius: 0.05rem;
+	background:#fff;
+			
+}
+.note1{
+	width:6.5rem;
+	height:0.8rem;
+	float:left;
+	line-height:0.8rem;
+	margin:0 0.3rem;
+	font-size:0.28rem;
+	color:#2e2b51;
+}
+.note1 span{
+	display:block;
+	width:auto;
+	float:left;	
+}
+.note1 p{
+	display:block;
+	width:auto;
+	font-weight:600;
+	float:right;	
+}
+
+
+.bargain_sell{
+	width:7.5rem;
+	height:0.98rem;
+	position:fixed;
+	bottom:0;
+	z-index: 20;
+}
+.bargain_sell .bargain{
+	display:block;
+	float:left;
+	width:50%;
+	height:0.98rem;
+	text-align:center;
+	line-height:0.98rem;
+	background:#08aaf1;
+	color:#fff;
+	font-size:0.36rem;
+	
+}
+.bargain_sell .on_sell{
+	display:block;
+	float:left;
+	width:50%;
+	height:0.98rem;
+	text-align:center;
+	line-height:0.98rem;
+	background:#0077ee;
+	color:#fff;
+	font-size:0.36rem;
+	
+}
+
+/*弹框样式*/
+.masking{
+	display: none;
+	font-family: "微软雅黑",Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.popup{
+    vertical-align: middle;
+    background-color: white;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+    font-size: 0.3rem;
+}
+.title-img p{
+	line-height: 0.5rem;
+}
+.title-img{
+	overflow: auto;
+	zoom: 1;
+	padding: 0 0.3rem;
+	height: 2.5rem;
+}
+.title-img .pop-img{
+	width: 2.5rem;
+	height: 2.5rem;
+	border:0.03rem solid #FFFFFF;
+	border-radius: 0.06rem;
+	position: absolute;
+	z-index: 102;
+}
+.title-img .pop-img img{
+	position: relative;
+	width: 2.5rem;
+	top: -0.3rem;
+}
+.title-img .pop-title{
+	position: absolute;
+	z-index: 102;
+	left: 3.2rem;
+	top:0.3rem
+}
+.pop-num{
+	height: 0.8rem;
+	padding: 0.3rem;
+}
+.pop-num input[type="text"]{
+	height: 0.3rem;
+	padding: 0.25rem 0.2rem;
+	margin: 0 0.3rem;
+	width: 1.5rem;
+	font-size: 0.3rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	border: 0.02rem solid #CCCEDB;
+}
+.pop-pay{
+	padding: 0.2rem 0.3rem 0.6rem;
+}
+.pop-pay p{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.15rem 0;
+}
+.pop-pay p input{
+	margin-right: 0.15rem;
+}
+
+.pop-pay p label{
+	margin-right: 0.4rem;
+}
+.pop-pay p a{
+	font-size: 0.24rem;
+}
+.pop-btn{
+	padding-left: 0.3rem;
+	height: 1.0rem;
+}
+.pop-btn .pop-sum{
+	width: 4.5rem;
+	height: 1.0rem;
+	float: left;
+}
+.pop-btn .pop-sum p.sum{
+	height: 0.6rem;
+	line-height: 0.8rem;
+}
+.pop-btn .pop-sum p.balance{
+	height: 0.4rem;
+	line-height: 0.3rem;
+	font-size: 0.20rem;
+	color: #C3C2CC;
+}
+.pop-btn .small-btn{
+	display: block;
+	width: 2.6rem;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	text-align: center;
+	background-color: #0077EE;
+	color: #FFFFFF;
+	font-size: 0.36rem;
+	float: right;
+}
+
+/*提示框样式*/
+.myalter{
+	display: none;
+	font-family: "微软雅黑",Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.myalter .alter-con{
+	vertical-align: middle;
+    background-color: white;
+    margin: auto auto;
+    height: auto;
+    width: 5.0rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    z-index: 901;
+    font-size: 0.28rem;
+    padding: 0.3rem;
+}
+.alter-con .con{
+	position:relative;
+	line-height: 0.8rem;
+	color: #000000;
+}
+.alter-con .btn{
+	color: #0077EE;
+	line-height: 0.6rem;
+	overflow: auto;
+	zoom: 1;
+	text-align: right;
+}
+.alter-con .btn a{
+	color: #0077EE;
+}

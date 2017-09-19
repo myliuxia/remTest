@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>详情-在售</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/store.css" />
+        <link rel="stylesheet" type="text/css" href="css/details.css" />
+        <script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/scroll.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="myheader">
+			<a class="left" href="onsell.html">
+				<img src="../img/back.png"/>
+			</a>
+			 <div class="center">
+			 	<span class="title">0.30FLDVG</span>
+			 </div>
+			<a class="right" href="javascript:;">
+				<img src="../img/notcollect.png"/>
+			</a>
+		</header>
+		<!--钻石图片-->
+		<div class="propic">
+			<img src="../img/detail_diamond.png">
+		</div>
+        <!--钻石名称、数量、价格-->
+        <div class="pro_messa">
+			<div class="pro_name_price">
+        		<p>0.30FLDVG单颗裸钻系列</p>
+                <span>￥5326/CT</span>
+        	</div>
+            <div class="pro_time_num">
+            	<span class="left">信息有效期：2016-01-01</span>
+            	<span class="right">求购55颗</span>
+            </div>
+        </div>
+        <!--钻石参数-->
+        <div class="diamond_para">
+        	<div class="para_title">
+            	<span>钻石参数</span>            
+            </div>
+            <div class="parameter">
+            	<div class="dia_para1">
+                	<img src="../img/parameter_01.png">
+                	<span>钻重<strong>1.66CT</strong></span>
+                    
+                </div>
+                <div class="dia_para1">
+                	<img src="../img/parameter_02.png">
+                	<span>对称<strong>EX</strong></span>                 
+                </div>
+                <div class="dia_para1">
+                	<img src="../img/parameter_01.png">
+                	<span>纯度<strong>VVS2</strong></span>                 
+                </div>
+                <div class="dia_para1">
+                	<img src="../img/parameter_01.png">
+                	<span>颜色<strong>E</strong></span>
+                </div>
+                <div class="dia_para1">
+                	<img src="../img/parameter_02.png">
+                	<span>切工<strong>VG</strong></span>
+                </div>
+                <div class="dia_para1">
+                	<img src="../img/parameter_03.png">
+                	<span>形状<strong>圆形</strong></span>
+                </div>
+                <div class="dia_para1">
+                	<img src="../img/parameter_01.png">
+                	<span>荧光<strong>None</strong></span>
+                </div>
+                <div class="dia_para1">
+                	<img src="../img/parameter_02.png">
+                	<span>抛光<strong>None</strong></span>
+                </div>                                
+            </div>
+        </div>
+        
+        <!--证书-->
+        <div class="certi">
+        	<span>证书GIA</span>
+        	<a href="javascript:;">
+        		
+            </a>
+        </div>
+        <!--信息编号、备款备货、保证金-->
+        <div class="note">
+        	<div class="note1">
+        		<span>信息编号：</span>
+                <p>213451234</p>
+            </div>
+            <div class="note1">
+        		<span>最小交易数量：</span>
+                <p>3颗</p>
+            </div>
+            <div class="note1">
+        		<span>买方履约保证金：</span>
+                <p>￥600 </p>
+            </div>
+            <div class="note1">
+        		<span>卖方履约保证金：</span>
+                <p>￥600 </p>
+            </div>
+        </div>
+        
+        <!--我要议价、立即卖出-->
+        <div class="bargain_sell">
+        	<a class="bargain" href="yi-jia.html">
+            	我要议价
+            </a>
+        	<a class="on_sell" id="on_sell" href="javascript:;">
+            	立即购买
+           </a>
+        </div>
+        
+        <!--弹窗-->
+        <div class="masking" id="masking" style="display: none;">
+        	<div class="popup">
+        		<form id="popfrm" action="javascript:;" method="post">
+        			
+        		
+        		<div class="title-img borderBottom">
+        			<div class="pop-img ">
+        				<img src="../img/detail_diamond1.png"/>
+        			</div>
+        			<div class="pop-title">
+        				<p class="pop-name">0.30FLDVG单颗裸钻系列</p>
+        				<p class="pop-price bold">￥5326/ct</p>
+        			</div>
+        		</div>
+        		 <div class="pop-num borderBottom">
+        		 	<p>
+        		 		<label for="nomber">数量</label>
+        		 		<input class="validate[required]" type="text" name="nomber" id="nomber" value="30"/>
+        		 		<span id="error" style="color: red;"></span>
+        		 		<span>颗</span>
+        		 	</p>
+        		 </div>
+        		 <div class="pop-pay borderBottom">
+        		 	<p>支付方式</p>
+        		 	<p>
+						<input class="left" type="radio" name="zffs" id="zffs" value=""/>
+						<label class="left" for="zffs">全额支付</label>
+						<input class="left" type="radio" name="zffs" id="zffs1" value=""/>
+						<label class="left" for="zffs1">信用支付</label>
+						<a class="font-blue left" href="javascript:;">什么是信用支付？</a>
+        		 	</p>
+        		 </div>
+        		 <div class="pop-btn">
+        		 	<div class="pop-sum">
+        		 		<p class="sum font-blue bold">总计：￥1,258,546.00</p>
+        		 		<p class="balance">您的剩余信用额度￥56,544.00</p>
+        		 	</div>
+        		 	<a class="small-btn" id="shop" href="javascript:;">
+        		 		确认购买
+        		 	</a>
+        		 </div>
+        		 	
+        		</form>
+        	</div>
+        </div>
+        
+        <!--提示框-->
+        <div class="myalter" id="myalter">
+        	<div class="alter-con">
+        		<div class="con">
+        			提示的内容
+        		</div>
+        		<div class="btn">
+        			<a class="confirm" href="javascript:;">确定</a>
+        		</div>
+        	</div>
+        </div>
+        
+        <script type="text/javascript">
+        	$(function(){
+        		
+        		
+        		/*点击弹出购买购买框*/
+        		$("#on_sell").on("click",function(){
+        			if($("#masking").is(":hidden")){
+        				$("#masking").show();
+        			}
+        		});
+        		
+        		$("#masking").on("click",function(){
+        			if(!$("#masking").is(":hidden")){
+        				$("#masking").hide();
+        			}
+        		});
+        		/*点击确定购买弹出错误提示*/
+        		$("#shop").on("click",function(){
+        			if($("#myalter").is(":hidden")){
+        				$("#myalter").show();
+        			}
+        		});
+        		/*点击确定隐藏错误提示*/
+        		$(".confirm").on("click",function(){
+        			if(!$("#myalter").is(":hidden")){
+        				$("#myalter").hide();
+        			}
+        		});
+        		
+        	})
+        </script>
+	</body>
+</html>

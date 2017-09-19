@@ -1,0 +1,196 @@
+/*指数筛选栏样式*/
+.price-screen{
+	position: fixed;
+	z-index: 20;
+	top: 0.9rem;
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background-color: #FFFFFF;
+}
+.price-screen a{
+	font-size: 0.28rem;
+	display: block;
+	float: left;
+	width: 50%;
+	color: #A3A7BE;
+	text-align: center;
+}
+.price-screen a.active{
+	color: #0077EE;
+}
+.price-screen a img{
+ 	width: 0.11rem;
+}
+/*指数列表样式*/
+.price{
+	border-radius: 0.05rem;
+	margin:0.2rem;
+	background-color: #FFFFFF;
+	padding-bottom: 0.3rem;
+	overflow: auto;
+	zoom: 1;
+}
+.price a{
+	display: block;
+	width: 100%;
+}
+.price .var{
+	height: 1.2rem;
+	width: 40%;
+	float: left;
+	padding-left: 0.32rem;
+}
+.price .var .var-name{
+	line-height: 0.9rem;
+	height: 0.8rem;
+	color: #2E2B51;
+	font-size: 0.3rem;
+	font-weight: 700;
+	overflow: hidden;
+}
+.price .var .var-id{
+	line-height: 0.4rem;
+	height: 0.4rem;
+	color: #C3C2CC;
+	font-size: 0.24rem;
+	float: left;
+}
+.price .val{
+	height: 1.2rem;
+	width: 40%;
+	float: right;
+	text-align: right;
+	padding-right: 0.2rem;
+	overflow: hidden;
+}
+.price .val.rise{
+	color: #FF6A54;
+}
+.price .val.drop{
+	color:#2CD3A1;
+}
+.price .val .val-name{
+	line-height: 0.9rem;
+	height: 0.8rem;
+	font-size: 0.3rem;
+	font-weight: 700;
+}
+.price .val .rou{
+	display: block;
+	float: right;
+	font-size: 0.24rem;
+	color: #FFFFFF;
+	width: auto;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0 0.2rem;
+	border-radius: 0.2rem;
+}
+.price .val.rise .rou{
+	background-color: #FF6A54;
+}
+.price .val.drop .rou{
+	background-color: #2CD3A1;
+}
+/*指数详情*/
+.price-details{
+	border-radius: 0.05rem;
+	margin:0.2rem;
+	background-color: #FFFFFF;
+	padding-top: 0.15rem;
+	overflow: auto;
+	zoom: 1;
+}
+.price-details .var{
+	line-height: 0.7rem;
+	height: 0.7rem;
+	padding: 0 0.2rem;
+}
+.price-details .var .var-name{
+	float: left;
+	font-size: 0.32rem;
+	color: #2E2B51;
+	font-weight: 700;
+}
+.price-details .var .var-id{
+	color: #a4a8bf;;
+	font-size: 0.24rem;
+	float: right;
+}
+.price-details .val{
+	line-height: 0.4rem;
+	height: 0.4rem;
+	padding: 0 0.2rem 0.3rem;
+}
+.price-details .val .date{
+	color: #a4a8bf;;
+	font-size: 0.24rem;
+	float: left;
+}
+.price-details .val .pack{/*收*/
+	cursor: pointer;
+	font-size: 0.24rem;
+	float: right;
+	color: #0077EE;
+	padding-right: 0.3rem;
+	background: url(../image/pack.png) no-repeat;
+	background-size: 0.25rem 0.25rem;
+	background-position: right center;
+}
+.price-details .val .put{/*放*/
+	cursor: pointer;
+	font-size: 0.24rem;
+	float: right;
+	color: #0077EE;
+	padding-right: 0.3rem;
+	background: url(../image/put.png) no-repeat ;
+	background-size: 0.25rem 0.25rem;
+	background-position: right center;
+}
+.price-details .details-table{
+	line-height: 0.35rem;
+	padding: 0;
+	margin: 0;
+}
+.price-details .details-table th{
+	text-align: center;
+	font-size: 0.24rem;
+	color: #a4a8bf;
+	font-weight: normal;
+}
+.price-details .details-table td{
+	text-align: center;
+	font-size: 0.28rem;
+	color: #636a7d;
+	padding-bottom: 0.3rem;
+}
+/*走势图样式*/
+.charts{
+	position: relative;
+	margin: 0.2rem;
+	background: #FFFFFF;
+	border-radius: 0.05rem;
+	padding: 0.1rem 0;
+}
+.charts .title{
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.charts .title a{
+	display: block;
+	width: 100%;/*33%*/
+	height: 100%;
+	color: #a4a8bf;
+	font-size: 0.28rem;
+	float: left;
+	text-align: center;
+}
+.charts .title a.active{
+	color: #0077EE;
+	border-bottom: 0.03rem solid #0077EE;
+}
+.charts .myCharts{
+	margin: 0.3rem 0.2rem;
+	height: 4.0rem;
+}

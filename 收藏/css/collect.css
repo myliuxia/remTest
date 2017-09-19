@@ -1,0 +1,98 @@
+/*收藏列表样式*/
+.collect-list li{
+	margin: 0.2rem;
+	padding: 0.3rem;
+	border-radius: 0.05rem;
+	background-color: #FFFFFF;
+	font-size: 0.3rem;
+}
+/*已售罄*/
+.collect-list li.soldout{
+	background:#FFFFFF url(../../img/soldout.png) no-repeat;
+	background-position: right 0.8rem center;
+	background-size: 1.2rem 1.2rem; 
+	color: #C9CBD8;
+}
+/*已下架*/
+.collect-list li.shelves{
+	background:#FFFFFF url(../../img/shelves.png) no-repeat;
+	background-position: right 0.8rem center;
+	background-size: 1.2rem 1.2rem; 
+	color: #C9CBD8;
+}
+.collect-list li .title{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	margin: 0.1rem 0;
+}
+.collect-list li .title .onsell{/*在售*/
+	font-size: 0.28rem;
+	margin: 0 0.2rem;
+	padding: 0 0.1rem;
+	color: #FFFFFF;
+	background-color: #C9CBD8;
+	border-radius: 0.05rem;
+}
+.collect-list li .title .ask-to-buy{/*求购*/
+	margin: 0 0.2rem;
+	padding: 0 0.1rem;
+	color: #FFFFFF;
+	background-color: #08AAF1;
+	border-radius: 0.05rem;
+}
+.collect-list li .date{
+	font-size: 0.24rem;
+	color: #C9CBD8;
+	line-height: 0.5rem;
+}
+
+/*编辑页面*/
+.edit-list li{
+	margin: 0.2rem 0;
+	height: 1.5rem;
+}
+.edit-list li label{
+	display: block;
+	width: 100%;
+	height: 1.5rem;
+	overflow: auto;
+	zoom: 1;
+	
+}
+.edit-list li label input[type="checkbox"]{
+	display: block;
+	height: 0.4rem;
+	width: 0.4rem;
+	
+	margin-left: 0.35rem;
+	margin-top: 0.55rem;
+	float: left;
+}
+.edit-list li label .col-content{
+	width: 5.7rem;
+	height: 0.9rem;
+	padding: 0.3rem;
+	float: right;
+	border-top-left-radius: 0.05rem;
+	border-bottom-left-radius: 0.05rem;
+	background-color: #FFFFFF;
+	font-size: 0.3rem;
+}
+.edit-list li label .col-content .title{
+	height: 0.6rem;
+	line-height: 0.6rem;
+	overflow: hidden;
+}
+.edit-list li label .col-content .date{
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 0.24rem;
+	color: C9CBD8;
+}
+.check-all{
+	line-height: 1.0rem;
+	padding-left: 0.5rem;
+}
+.check-all input{
+	vertical-align:-0.08rem;
+}

@@ -1,0 +1,57 @@
+/*输入提示为浅灰色*/
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #CDCFDB; 
+font-weight: 100;
+font-family: "微软雅黑";
+}
+input:-ms-input-placeholder {
+color: #CDCFDB;
+font-weight: 100;
+font-family: "微软雅黑";
+}
+input::-webkit-input-placeholder {
+color: #CDCFDB;
+font-weight: 100;
+font-family: "微软雅黑";
+}
+
+.message{
+	font-size: 0.3rem;
+	color: #2E2B51;
+	margin: 0.2rem 0;
+	
+}
+.title{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-weight: bold;
+	padding: 0 0.2rem;
+}
+.mess-con{
+	background-color: #FFFFFF;
+}
+.mess-con p{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.25rem 0.3rem;
+}
+.mess-con p span{
+	margin-left: 0.1rem;
+}
+.mess-con input[type="radio"]{
+	margin-right: 0.1rem;
+}
+.mess-con input[type="text"]{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	width: auto;
+	font-size: 0.3rem;
+}
+.mess-con p label{
+	margin-right: 0.3rem;
+}
+.mess-con p a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}

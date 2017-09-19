@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>发布供</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fgq.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lCalendar.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/lCalendar.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="myheader blue">
+			<a class="left" href="../index.html">
+				<img src="../img/back_w.png"/>
+			</a>
+			发布供求信息
+			<span class="right" style="width:0.8rem; height: 100%;"></span>
+		</header>
+		<div class="content" >
+			<form id="fgqfrm" action="" method="post">
+				
+			<p class="state">
+				<span class="font-orange">温馨提示</span>
+				请务必确认您所发布的信息真实、合法、准确及时，未侵犯他人合法权益，以免导致不必要的纠纷！ 
+			</p>
+			<!--供求信息-->
+			<div class="message">
+				<div class="title">
+					供求信息
+				</div>
+				<div class="mess-con">
+					<p>
+						<span>发布方向</span>
+					</p>
+					<p class="borderBottom">
+						<input class="left" type="radio" name="fbfx" id="fbfx"/>
+						<label class="left" for="fbfx">供应信息</label>
+						<input class="left" type="radio" name="fbfx" id="fbfx1"/>
+						<label class="left" for="fbfx1">求购信息</label>
+					</p>
+					<p>
+						<span>仓单关联</span>
+					</p>
+					<p>
+						<input class="left" type="radio" name="cdgl" id="cdgl"/>
+						<label class="left" for="cdgl">关联仓单</label>
+						<a href="fgq-select-cd.html">
+						<input class="txtIcon font-blue left" type="text" name="cangdan" id="cangdan" value="请选择仓单" readonly=""/>
+						</a>
+					</p>
+					<p>
+						<input class="left" type="radio" name="cdgl" id="cdgl1"/>
+						<label class="left" for="cdgl1">不关联仓单</label>
+					</p>
+					
+				</div>
+			</div>
+			
+			<!--钻石参数-->
+			<div class="message">
+				<div class="title">
+					钻石参数
+				</div>
+				<div class="mess-con">
+					<p>
+						<a href="fgq-zs-parameter.html" style="color:#2E2B51">
+						<label for="zspz">选择钻石品种</label>
+						<span class="right"><img class="rem4" src="../img/back_g.png"/></span>
+						<input class="right txt-right bold" type="text" name="zspz" id="zspz" value="G30V1SS1" readonly=""/>
+						</a>
+					</p>
+				</div>
+			</div>
+			<!--交易信息-->
+			<div class="message">
+				<div class="title">
+					交易信息
+				</div>
+				<div class="mess-con">
+					<p class="borderBottom">
+						<label for="dj">单价</label>
+						<span class="right">元/克拉</span>
+						<input class="right txt-right" type="text" name="dj" id="dj" placeholder="请输入单价"/>
+					</p>
+					<p class="borderBottom">
+						<label for="dj">数量</label>
+						<span class="right">颗</span>
+						<input class="right txt-right validate[required]" type="text" name="dj" id="dj" placeholder="请输入数量"/>
+					</p>
+					<p class="borderBottom">
+						<label for="dj">起订量</label>
+						<span class="right">颗</span>
+						<span class="right bold" >1</span>
+					</p>
+					<p>
+						<label>成交方式</label>
+					</p>
+					<p>
+						<input class="left" type="radio" name="cjfs" id="cjfs"/>
+						<label class="left" for="cjfs">可议价</label>
+						<input class="left" type="radio" name="cjfs" id="cjfs1"/>
+						<label class="left" for="cjfs1">不可议价</label>
+						<input class="left" type="radio" name="cjfs" id="cjfs2"/>
+						<label class="left" for="cjfs2">必须议价</label>
+					</p>
+				</div>
+			</div>
+			<!--信息有效期-->
+			<div class="message">
+				<div class="title">
+					信息有效期
+				</div>
+				<div class="mess-con">
+					<p class="borderBottom">
+						<input class="left" type="radio" name="yxq" id="yxq"/>
+						<label class="left" for="yxq">指定有效期</label>
+						<input class="dateIcon font-blue left" type="text" name="select-yxq" id="select-yxq" value="请选择有效期" readonly=""/>
+					</p>
+					<p>
+						<input class="left" type="radio" name="yxq" id="yxq1"/>
+						<label class="left" for="yxq1">长期有效</label>
+					</p>
+				</div>
+			</div>
+			<!--交收类型-->
+			<div class="message">
+				<div class="title">
+					交收类型
+				</div>
+				<div class="mess-con">
+					<p class="borderBottom">
+						<input class="left" type="radio" name="jslx" id="jslx"/>
+						<label class="left" for="jslx">线上交收</label>
+						<input class="left" type="radio" name="jslx" id="jslx1"/>
+						<label class="left" for="jslx1">线下交收</label>
+					</p>
+					<p>
+						<label class="left" for="xzck">选择仓库</label>
+						<select name="xzck" id="xzck">
+						    <option value="123423">请选择</option>
+						    <option value="123423">123423</option>
+							<option value="asdsasd">asdsasd</option>
+							<option value="仓库1">仓库1仓库1</option>
+							<option value="asdsasd1">asdsasd</option>
+							<option value="仓库1">仓库1仓库1</option>
+							<option value="asdsasd1">asdsasd</option>
+							<option value="仓库1">仓库1仓库1</option>
+    				</select>
+					</p>
+				</div>
+			</div>
+			
+			<!--备款/备货期限-->
+			<div class="message">
+				<div class="title">
+					备款/备货期限
+				</div>
+				<div class="mess-con">
+					<p class="borderBottom">
+						<input class="left" type="radio" name="jhqx" id="jhqx"/>
+						<label for="jhqx">顺延交货</label>
+						<span class="right">小时</span>
+						<input class="right txt-right" type="text" name="dj" id="dj" placeholder="请输入交易的顺延时间"/>
+					</p>
+					<p class="borderBottom">
+						<input class="left" type="radio" name="jhqx" id="jhqx1"/>
+						<label class="left" for="jhqx1">指定交货日期</label>
+						<input class="dateIcon font-blue left" type="text" name="select-jhqx" id="select-jhqx" value="请选择有效期" readonly=""/>
+					</p>
+					
+					<p class="borderBottom">
+						<label>买房履约保证金</label>
+						<span class="right">元</span>
+						<input class="right txt-right" type="text" name="bzjbuy" id="bzjbuy" placeholder="请输入保证金价格"/>
+					</p>
+					<p>
+						<label>卖房履约保证金</label>
+						<span class="right">元</span>
+						<input class="right txt-right" type="text" name="bzjsell" id="bzjsell" placeholder="请输入保证金价格"/>
+					</p>
+				</div>
+			</div>
+			
+			<p class="state" style="background: transparent;">
+				<input class="left" type="checkbox" name="agree" id="agree"/>
+				<label for="agree" class="font-gray">我已阅读并同意条款</label>
+				<a class="font-blue" href="javascript:;">《钻联平台服务条款及交易规则》</a>
+			</p>
+			</form>
+		</div>
+		<footer class="footer-butten">
+			<input class="big" type="button" value="确定" />
+		</footer>
+		
+		
+		<script type="text/javascript">
+			var calendar = new lCalendar();
+		    calendar.init({
+		        'trigger': '#select-yxq',
+		        'type': 'date'
+		    })
+		    
+		    var calendar1 = new lCalendar();
+		    calendar1.init({
+		        'trigger': '#select-jhqx',
+		        'type': 'date'
+		    })
+		</script>
+		
+		
+	</body>
+</html>

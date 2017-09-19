@@ -1,0 +1,200 @@
+
+/*排序条件*/
+.screen{
+	position: fixed;
+	z-index: 20;
+	top:0.9rem;
+	width: 7.50rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	
+	background-color: #FFFFFF;
+}
+.screen a{
+	font-size: 0.30rem;
+	display: block;
+	float: left;
+	width: 33%;
+	color: #A3A7BE;
+	text-align: center;
+}
+.screen a.active{
+	color: #0077EE;
+	height: 0.86rem;
+	border-bottom: 0.04rem solid #0077EE;
+}
+.screen a span img{
+	width: 0.11rem;
+}
+
+.pact{
+	margin: 0.3rem;
+	font-size: 0.28rem;
+	background-color: #FFFFFF;
+	border-radius: 0.06rem;
+}
+.pact p{
+	padding: 0 0.3rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+
+.pact .row a.title{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #2E2B51;
+}
+.pact .row a.title .direction{
+	display: block;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background-color: #0077EE;
+	border-radius: 0.4rem;
+	padding: 0 0.2rem;
+	color: #FFFFFF;
+	float: left;
+	margin-right: 0.2rem;
+	margin-top: 0.2rem;
+	font-size: 0.24rem;	
+}
+ 
+.pact .row span.bigtit{
+	
+	font-size: 0.30rem;
+	float: left;
+	color: #2E2B51;
+}
+.pact .row span.business{/*求购在售*/
+	display: block;
+	height: 0.37rem;
+	line-height: 0.37rem;
+	width: auto;
+	background-color: #08AAF1;
+	border-radius: 0.06rem;
+	padding: 0 0.05rem;
+	color: #FFFFFF;
+	margin: 0.2rem;
+	font-size: 0.22rem;	
+	float: left;
+}
+.pact .row span.img{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	vertical-align: middle;
+}
+.pact .row span.img img{
+	width: 0.4rem;
+	vertical-align: middle;
+}
+.pact .row span.val{
+	color: #2E2B51;
+	font-weight: bold;
+}
+.pact .yj-data{
+	padding: 0 0.3rem 0.25rem;
+	border-bottom: 0.02rem solid #E5E4EA;
+}
+.pact .yj-data .yj-after{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 0.28rem;
+}
+.pact .yj-data .yj-before{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	color: #A3A7BE;
+	font-size: 0.24rem;
+}
+.pact .yj-data .half{
+	display: block;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.pact .font-btn{
+	height: 0.6rem;
+	line-height: 0.6rem;
+	padding: 0.25rem 0;
+}
+
+
+.pact .font-btn .btn{
+	display: inline-block;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	width: 1.38rem;
+	text-align: center;
+	color: #0077EE;
+	border: 0.02rem solid #0077EE;
+	border-radius: 0.06rem;
+	margin: 0 0.3rem;
+	float: right;
+}
+
+
+/*议价详情页面样式*/
+.spxq-tit{
+	padding: 0.3rem;
+	background-color: #FFFFFF;
+	font-size: 0.36rem;
+	height: 1.0rem;
+	overflow: hidden;
+}
+.spxq-tit .tit-name{
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.spxq-tit .tit-time{
+	display: block;
+	line-height: 0.4rem;
+	height: 0.4rem;
+	font-size: 0.24rem;
+	color: #A4A8BF;
+}
+.xq-con{
+	margin: 0.2rem;
+	background-color: #FFFFFF;
+	border-radius: 0.05rem;
+}
+.xq-con p{
+	line-height: 0.9rem;
+	font-size: 0.3rem;
+	padding: 0 0.3rem;
+	vertical-align:middle;
+}
+.xq-con p .icon{
+	vertical-align:middle;
+	width: 0.4rem;
+}
+.xq-con .para-list{
+	padding: 0;
+	overflow: auto;
+	zoom: 1;
+}
+.xq-con .para-list li{
+	margin-bottom: 0.3rem;
+	width: 33%;
+	text-align: center;
+	float: left;
+}
+
+.xq-con .para-list li .para-name{
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+	color: #2E2B51;
+	text-align: center;
+}
+.xq-con .para-list li .icon-para{
+	width: 0.8rem;
+	height: 0.8rem;
+	margin: 0 auto;
+}
+.xq-con p input[type="text"]{
+	line-height: 0.9rem;
+	font-size: 0.3rem;
+	color: #2E2B51;
+	float: right;
+	text-align: right;
+	font-weight: bold;
+}

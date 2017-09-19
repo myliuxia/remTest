@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>仓单出库申请</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cdgl.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/init.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="myheader blue">
+			<a class="left" href="javascript:;">
+				<img src="../img/back_w.png"/>
+			</a>
+			<span class="bold">出库申请</span>
+			<span class="right" style="width:0.8rem; height: 100%;"></span>
+		</header>
+		
+		<div class="content" >
+			<p class="state">
+				<span class="font-orange">温馨提示:</span>
+				请因购买时，货品重量为规格重量，货品实际重量稍重于规格重量。提货时，应根据货品实际重量补差额。
+			</p>
+			<div class="cksq">
+				<p class="borderBottom">
+					<label>仓单号</label>
+					<input type="text" name="cd-id" id="cd-id" value="12341234" readonly=""/>
+				</p>
+				<p class="borderBottom">
+					<label>出库申请人</label>
+					<input type="text" name="user" id="user" value="刘夏" readonly=""/>
+				</p>
+				<p class="borderBottom">
+					<label>出库申请人身份证号</label>
+					<input type="text" name="userid" id="userid" value="512112199206150222" readonly=""/>
+				</p>
+				<p class="sel-radio">
+					<label>选择配送方式</label>
+				</p>
+				<p class="sel-radio">
+					<input class="left" type="radio" name="dc" id="dc"/>
+					<label class="left" for="dc">自提</label>
+				</p>
+				<p class="sel-radio">
+					<input class="left" type="radio" name="dc" id="dc1"/>
+					<label class="left" for="dc1">配送</label>
+					<a class="address left bold" href="../设置/地址管理/address-manage.html">
+						北京市朝阳区建国路99号彗星祥源小区建国大厦A座1108
+					</a>
+				</p>
+			</div>
+		</div>
+		<footer class="footer-butten">
+			<a class="big right" href="javascript:;">申请出库</a>
+		</footer>
+	</body>
+</html>

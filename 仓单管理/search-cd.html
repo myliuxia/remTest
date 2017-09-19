@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>未注册仓单管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cdgl.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/search.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<header class="myheader blue">
+			<div class="headertitle"> 
+				<a class="left" href="cdgl.html">
+					<img src="../img/back_w.png"/>
+				</a>
+				<span class="bold">未注册仓单管理</span>
+				<a class="right" href="javascript:;" onclick="showSreach()">
+					<img src="../img/search.png"/>
+				</a>
+			</div>
+			<form class="mysearch" action="javascript:;" method="post" hidden="hidden">
+				<a href="javascript:;" id="search-btn"><img src="../img/search2.png"/></a>
+				<input type="text" name="search_name" id="search_name" placeholder="品种名称"
+					 onfocus="onsreachfocus()" onblur="onsreachblur()"/>
+				<a href="javascript:;" id="clear" onclick="onClearClick()"><img src="../img/delete.png"/></a>
+				<input type="button" value="取消" onclick="hideSreach()"/>
+			</form>
+		</header>
+		<div class="content" >
+			<ul>
+				<li class="cd-list">
+					<p class="borderBottom">
+						<a class="title" href="unreg-cdxq.html">
+							<span class="left">仓单号:11234466</span>
+							<span class="img right"><img src="../img/back_g.png"/></span>
+						</a>
+					</p>
+					<p>
+						<span class="tit">品名：</span>
+						<span class="val">0.3FLDVG</span>
+					</p>
+					<p>
+						<span class="tit">数量：</span>
+						<span class="val">100</span>
+					</p>
+					<p>
+						<a class="btn right" href="javascript:;">注册</a>
+						<a class="btn right" href="cdgl-cksq.html">出库申请</a>
+					</p>
+				</li>
+				
+				<li class="cd-list">
+					<p class="borderBottom">
+						<a class="title" href="unreg-cdxq.html">
+							<span class="left">仓单号:11234466</span>
+							<span class="img right"><img src="../img/back_g.png"/></span>
+						</a>
+					</p>
+					<p>
+						<span class="tit">品名：</span>
+						<span class="val">0.3FLDVG</span>
+					</p>
+					<p>
+						<span class="tit">数量：</span>
+						<span class="val">100</span>
+					</p>
+					<p>
+						<a class="btn right" href="javascript:;">注册</a>
+						<a class="btn right" href="cdgl-cksq.html">出库申请</a>
+					</p>
+				</li>
+				
+				
+				<li class="cd-list">
+					<p class="borderBottom">
+						<a class="title" href="unreg-cdxq.html">
+							<span class="left">仓单号:11234466</span>
+							<span class="img right"><img src="../img/back_g.png"/></span>
+						</a>
+					</p>
+					<p>
+						<span class="tit">品名：</span>
+						<span class="val">0.3FLDVG</span>
+					</p>
+					<p>
+						<span class="tit">数量：</span>
+						<span class="val">100</span>
+					</p>
+					<p>
+						<a class="btn right" href="javascript:;">注册</a>
+						<a class="btn right" href="cdgl-cksq.html">出库申请</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+		
+	</body>
+</html>

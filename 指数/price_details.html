@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>指数列表</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/price.css"/>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript"></script>
+	<script src="../js/init.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../js/highcharts.js" ></script>
+</head>
+<body>
+	<header class="myheader blue">
+		<a class="left" href="javascript:history.go(-1);">
+			<img src="../img/back_w.png"/>
+		</a>
+		 <span class="bold">交易行情</span>
+		 <a class="right" href="javascript:;">
+			<span style="display:block;width:0.4rem; height: 0.4rem;"></span>
+		</a>
+	</header>
+	
+	<div class="content">
+		<div class="price-details">
+			<div class="var">
+				<p class="var-name">0.40FLDVG</p>	
+				<span class="var-id">代码：100082</span>
+			</div>
+			<div class="val">
+				<span class="date">交易中&nbsp;2016-11-29&nbsp;16:24</span>	
+				<span class="pack" id="det-btn">品种详情</span>
+			</div>
+			<table class="details-table" style="display: none;" border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<th width="25%">钻重</th> 
+					<th width="25%">净度</th> 
+					<th width="25%">颜色</th> 
+					<th width="25%">切工</th> 
+				</tr>
+				<tr>
+					<td>0.5ct</td>
+					<td>FL</td>
+					<td>F</td>
+					<td>VG</td> 
+				</tr>
+				<tr>
+					<th>形状</th>
+					<th>对称性</th>
+					<th>抛光</th>
+					<th>荧光</th> 
+				</tr>
+				<tr>
+					<td>圆形</td>
+					<td>VG</td>
+					<td>VG</td> 
+					<td>VG</td> 
+				</tr>
+			</table>
+		</div>
+		<!-- 走势图  -->
+		<div class="charts">
+			<!--<div class="title">
+				<a class="active" href="javascript:;">
+					走势图
+				</a>
+			</div>-->
+			<div class="myCharts" id="myCharts" style="width: 100%;height: 4.0rem;">
+				
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$("#det-btn").click(function(){
+				if($(".details-table").is(":hidden")){
+					$(this).addClass("put");
+					$(".details-table").show();
+				}else{
+					$(this).removeClass("put");
+					$(".details-table").hide();
+				}
+			});
+			var data = [ [Date.UTC(2016,11,1),14598.91],
+		            [Date.UTC(2016,11,2),14876.51],
+		            [Date.UTC(2016,11,3),15088.49],
+		            [Date.UTC(2016,11,4),15098.91],
+		            [Date.UTC(2016,11,5),15476.51],
+		            [Date.UTC(2016,11,6),16088.49],
+					[Date.UTC(2016,11,7),15098.91],
+		            [Date.UTC(2016,11,8),15476.51],
+		            [Date.UTC(2016,11,9),17088.49],
+		            [Date.UTC(2016,11,10),17374.12],
+					[Date.UTC(2016,11,11),16098.91],
+		            [Date.UTC(2016,11,12),15876.51],
+		            [Date.UTC(2016,11,13),16088.49],
+		            [Date.UTC(2016,11,14),15798.91],
+		            [Date.UTC(2016,11,15),15476.51],
+		            [Date.UTC(2016,11,16),14888.49],
+					[Date.UTC(2016,11,17),15098.91],
+		            [Date.UTC(2016,11,18),15476.51],
+		            [Date.UTC(2016,11,19),16088.49],
+		            [Date.UTC(2016,11,20),16374.12],
+		            [Date.UTC(2016,11,21),16888.09],
+		            [Date.UTC(2016,11,22),16899.97],
+		            [Date.UTC(2016,11,23),15098.91],
+		            [Date.UTC(2016,11,24),15476.51],
+		            [Date.UTC(2016,11,25),16088.49],
+		            [Date.UTC(2016,11,26),16374.12],
+		            [Date.UTC(2016,11,27),16888.09],
+		            [Date.UTC(2016,11,28),16899.97],
+		            [Date.UTC(2016,11,29),17500.26]];
+		    var title = "0.40FLDVG";
+		    showCharts(data,title);
+		    
+		    /**
+		     * 初始化走势图样式（touch版）
+		     * data:展示的json数据
+		     * title:走势图的标题
+		     */
+			function showCharts(data,title){
+			var rem =100 * (document.documentElement.clientWidth / 750)
+			//设置初始值
+			Highcharts.setOptions({
+				lang: {
+					resetZoom: "返回",
+					resetZoomTitle: "回到初始状态"
+				}
+			});
+			/*var chart = new Highcharts.Chart(*/
+		    $('#myCharts').highcharts({
+		        chart: {//图标设置
+		        	//renderTo: 'myChart',
+		        	height: 4.0*rem,
+		        	width: 6.7*rem,
+		            marginBottom: 0.45*rem,
+		            marginLeft:0.9*rem,
+		            marginTop:0.6*rem,
+		            zoomType: 'x',// 横向放大
+		            panning: true,
+		            panKey: 'shift',
+		            resetZoomButton:{
+		            	relativeTo: 'chart',
+		            	position: {
+		                    x: -0.1*rem,
+		                    y: 0
+		                },theme: {
+		                    fill: 'white',
+		                    stroke: 'silver',
+		                    r: 0.05*rem,
+		                }
+		            }
+		        },
+		        title:{
+		        	text: title+"走势",
+		        	align: 'center',
+		        	margin:0.4*rem,
+		        	verticalAlign: "top",
+		        	y:0.2*rem,
+		        	style:{
+		        		fontSize:'0.3rem',
+		        		lineHeight:'0.5rem',
+						fontFamily:'"Arial","Microsoft YaHei","黑体","宋体",sans-serif'
+		        	}
+		        },
+	           //设置滚动条    
+				scrollbar : {
+					enabled : true
+				},
+		        legend:{//说明
+		        	enabled:false
+		        },
+		         tooltip: {
+		         	xDateFormat: '%Y-%m-%d',
+		            //crosshairs: true,
+		            shared: true,
+		            useHTML: true,
+		            headerFormat: '<small style="font-size:0.2rem">{point.key}</small><table>',
+		            pointFormat: '<tr><td style="color: {series.color}">{series.name}:</td>' +
+		            '<td style="text-align: right"><b>{point.y}</b></td></tr>',
+		            footerFormat: '</table>',
+		            //backgroundColor:'#ff5a00',
+		            borderRadius:0.1*rem,
+		            borderWidth:0,
+		            style: {
+						fontSize:'0.2rem',
+						fontFamily:'"Arial","Microsoft YaHei","黑体","宋体",sans-serif'
+					}
+		            
+		        },
+		        xAxis: {
+		            //categories: ['11.19', '11.20', '11.21', '11.22', '11.23', '11.24', '11.25'],
+		           	type: 'datetime',
+	                dateTimeLabelFormats: {
+	                    millisecond: '%H:%M:%S.%L',
+	                    second: '%H:%M:%S',
+	                    minute: '%H:%M',
+	                    hour: '%H:%M',
+	                    day: '%m-%d',
+	                    week: '%m-%d',
+	                    month: '%Y-%m',
+	                    year: '%Y'
+	                },
+		            labels: {
+		            	align:"center",
+		            	y: 0.3*rem,
+		            	style: {
+							fontSize:'0.2rem',
+							fontFamily:'"Arial","Microsoft YaHei","黑体","宋体",sans-serif'
+						}
+		            },
+		            tickPixelInterval:1*rem,
+		            tickLength: 0.06*rem,//刻度的长度
+		        },
+		        yAxis: {
+		            labels: {
+           				format: '{value}',
+           				style: {
+							fontSize:'0.2rem',
+							fontFamily:'"Arial","Microsoft YaHei","黑体","宋体",sans-serif'
+						}
+		            },
+		            gridLineDashStyle:"Dot",
+		            title:{
+		            	text:null
+		            }
+		        }, 
+		        plotOptions: {
+		             area: {
+	                    fillColor: {
+	                        linearGradient: {
+	                            x1: 0,
+	                            y1: 0,
+	                            x2: 0,
+	                            y2: 1
+	                        },
+	                        stops: [
+	                            [0, Highcharts.getOptions().colors[0]],
+	                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+	                        ]
+	                    },
+	                    marker: {
+	                        radius: 2
+	                    },
+	                    lineWidth: 1,
+	                    states: {
+	                        hover: {
+	                            lineWidth: 1
+	                        }
+	                    },
+	                    threshold: null
+	                }
+		        },
+		        series: [{
+		        	type: 'area',
+		        	name: '指数',
+		            data: data
+		          
+		        }]
+		    });
+			}
+		})
+		
+	</script>
+</body>
+</html>

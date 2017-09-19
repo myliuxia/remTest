@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+	</head>
+	<body>
+		<header class="myheader">
+			<div class="headertitle">
+			<a class="left" href="javascript:;" onclick="showSreach()">
+				<img src="img/search.png"/>
+			</a>
+			 <span class="bold">钻联科技</span>
+			<a class="right" href="信息中心/information.html">
+				<img src="img/mailnew.png"/>
+			</a>
+			</div>
+			<form class="mysearch" action="javascript:;" method="post" hidden="hidden">
+				<a href="javascript:;" id="search-btn"><img src="img/search2.png"/></a>
+				<input type="text" name="search_name" id="search_name" placeholder="品种名称"
+					 onfocus="onsreachfocus()" onblur="onsreachblur()"/>
+				<a href="javascript:;" id="clear" onclick="onClearClick()"><img src="img/delete.png"/></a>
+				<input type="button" value="取消" onclick="hideSreach()"/>
+			</form>
+		</header>
+		<!--商品列表-->
+		<div class="content-index">
+			<!--综合指数展示模块-->
+			<!--<div class="index-1">
+				<h1 class="title">84730.00</h1>
+				<p class="num-sum">在售：<span>153</span> 颗<p>
+				<p>
+				<a class="index-btn" href="javascript:;">
+					钻联综合交易指数
+				</a></p>	
+			</div>-->
+			
+			<div class="swiper-container">
+		    <div class="swiper-wrapper">
+			    <div class="swiper-slide">
+			    	<div class="swiper-img">
+			    		<!-- 背景图 -->
+			    		<img src="img/index_b.png"/>
+			    	</div>
+					<h1 class="title">84730.00</h1>
+					<p class="num-sum">在售：<span>1234</span> 颗</p>
+					<p>
+						<a class="index-btn" href="javascript:;">
+							钻联国内综合交易指数
+						</a>
+					</p>	
+				</div>
+		        
+			      <div class="swiper-slide">
+			    	<div class="swiper-img">
+			    		<!-- 背景图 -->
+			    		<img src="img/index_b.png"/>
+			    	</div>
+			        <h1 class="title">84730.00</h1>
+						<p class="num-sum">在售：<span>54346</span> 颗</p>
+						<p>
+							<a class="index-btn" href="javascript:;">
+								钻联国际综合交易指数
+							</a>
+						</p>	
+			      </div>
+			      <div class="swiper-slide">
+			    	<div class="swiper-img">
+			    		<!-- 背景图 -->
+			    		<img src="img/index_b.png"/>
+			    	</div>
+			        	<h1 class="title">84730.00</h1>
+						<p class="num-sum">在售：<span>132412</span> 颗</p>
+						<p>
+							<a class="index-btn" href="javascript:;">
+								全球钻石交易指数
+							</a>
+						</p>	
+			      </div>
+		      </div>
+		       <div class="swiper-pagination"></div>
+		  </div> 
+			<script type="text/javascript">
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				autoplay:2000,
+				setWrapperSize:true,
+				autoplayDisableOnInteraction:false,
+				freeModeMomentumRatio:1000,
+				freeModeMomentumBounceRatio:1000,
+				centeredSlides:true,
+			});
+			    
+			</script>
+			
+			
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="商城/onsell.html">
+							<img src="img/ind_buy.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="发供求/fgq.html">
+							<img src="img/ind_sell.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="注册登录/login.html">
+							<img src="img/ind_member.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/ind_diamond.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/ind_ipo.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/ind_aboutus.png"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="recommend">
+				<p class="rec-title bold">
+					<span><img src="img/black_diamond.png"/></span>
+					推荐品种
+				</p>
+				<ul>
+					<li class="variety rise">
+					
+						<p class="var-title">
+							<a href="javascript:;">
+							
+								<span class="title">
+								<img src="img/index.png"/>
+								1562005</span>
+								<img class="right" src="img/backr_w.png"/>
+							</a>
+						</p>
+						<p class="var-change">
+						最新：<span class="font-color">18420</span>
+						涨幅：<span class="font-color">+1.06%</span>
+						</p>
+						<div class="rou-img">
+							<img src="img/ind_pro.png"/>
+						</div>
+						<p class="var-price borderBottom">
+							￥13400/ct
+						</p>
+						<!--相关参数-->
+						<div class="para">
+							<div class="para1">
+								<p>规格重量</p>
+								<span>0.5ct</span>
+							</div>
+							<div class="para1">
+								<p>切工</p>
+								<span>VG</span>
+							</div>
+							<div class="para1">
+								<p>颜色</p>
+								<span>D</span>
+							</div>
+							<div class="para1">
+								<p>净度</p>
+								<span>VVS2</span>
+							</div>
+						</div>
+					</li>
+					
+					<li class="variety drop">
+					
+						<p class="var-title">
+							<a href="javascript:;">
+							
+								<span class="title">
+								<img src="img/index.png"/>
+								1562005</span>
+								<img class="right" src="img/backr_w.png"/>
+							</a>
+						</p>
+						<p class="var-change">
+						最新：<span class="font-color">18420</span>
+						涨幅：<span class="font-color">+1.06%</span>
+						</p>
+						<div class="rou-img">
+							<img src="img/ind_pro.png"/>
+						</div>
+						<p class="var-price borderBottom">
+							￥13400/ct
+						</p>
+						<!--相关参数-->
+						<div class="para">
+							<div class="para1">
+								<p>规格重量</p>
+								<span>0.5ct</span>
+							</div>
+							<div class="para1">
+								<p>切工</p>
+								<span>VG</span>
+							</div>
+							<div class="para1">
+								<p>颜色</p>
+								<span>D</span>
+							</div>
+							<div class="para1">
+								<p>净度</p>
+								<span>VVS2</span>
+							</div>
+						</div>
+					</li>
+					
+					<li class="variety rise">
+					
+						<p class="var-title">
+							<a href="javascript:;">
+							
+								<span class="title">
+								<img src="img/index.png"/>
+								1562005</span>
+								<img class="right" src="img/backr_w.png"/>
+							</a>
+						</p>
+						<p class="var-change">
+						最新：<span class="font-color">18420</span>
+						涨幅：<span class="font-color">+1.06%</span>
+						</p>
+						<div class="rou-img">
+							<img src="img/ind_pro.png"/>
+						</div>
+						<p class="var-price borderBottom">
+							￥13400/ct
+						</p>
+						<!--相关参数-->
+						<div class="para">
+							<div class="para1">
+								<p>规格重量</p>
+								<span>0.5ct</span>
+							</div>
+							<div class="para1">
+								<p>切工</p>
+								<span>VG</span>
+							</div>
+							<div class="para1">
+								<p>颜色</p>
+								<span>D</span>
+							</div>
+							<div class="para1">
+								<p>净度</p>
+								<span>VVS2</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+				
+			</div>
+			
+			<div class="bottom-nav">
+				<a class="borderright" href="javascript:;">
+					<div class="ind-img">
+						<img src="img/ind_guide01.png"/>
+					</div>
+					<p>关于钻联</p>
+				</a>
+				<a href="javascript:;">
+					<div class="ind-img">
+						<img src="img/ind_guide02.png"/>
+					</div>
+					<p>新手指导</p>
+				</a>
+				<a class="borderleft" href="javascript:;">
+					<div class="ind-img">
+						<img src="img/ind_guide03.png"/>
+					</div>
+					<p>安全保障</p>
+				</a>
+			</div>
+		</div>
+		
+		<footer class="myfooter">
+			<a class="active" href="index.html">
+				<span><img src="img/blue_home.png"/></span>
+				<p>首页</p>
+			</a>
+			<a href="商城/onsell.html">
+				<span><img src="img/grey_store.png"/></span>
+				<p>商城</p>
+			</a>
+			<a href="发供求/fgq.html">
+				<div class="round">
+					<span><img src="img/white_issue.png"/></span>
+					<p>发供求</p>
+				</div>
+			</a>
+			<a href="指数/price_details.html">
+				<span><img src="img/grey_quote.png"/></span>
+				<p>行情</p>
+			</a>
+			<a href="mine.html">
+				<span><img src="img/grey_mine.png"/></span>
+				<p>我的</p>
+			</a>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>转入仓单</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/input.css"/>
+		<script src="../../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/search.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="myheader blue">
+			<a class="left" href="javascript:;">
+				<img src="../../img/back_w.png"/>
+			</a>
+			<form class="mysearch" action="javascript:;" method="post">
+				<a href="javascript:;" id="search-btn"><img src="../../img/search2.png"/></a>
+				<input type="text" name="search_name" id="search_name" placeholder="请输入仓单号或砖石名称"
+					 onfocus="onsreachfocus()" onblur="onsreachblur()"/>
+				<a href="javascript:;" id="clear" onclick="onClearClick()"><img src="../../img/delete.png"/></a>
+				
+			</form>
+		</header>
+		<div class="content" >
+			<p class="state">
+				<span class="font-orange">温馨提示</span>
+				当前合同正等待转入仓单，请于（2016-01-01）前转入仓单。请注意您转入的仓单应与交易商品一致。已转入的仓单数量为
+				（0）颗。转入的仓单总量为（10）颗。转入仓单后该合同之前占用您的资金（5.00）元将返回您的账户。在规定时间内，若对方没有履约，
+				您可以申请对方违约。
+			</p>
+			<ul>
+				<li class="cd-list">
+					<p class="borderBottom">
+						<span class="title">
+							<label>
+								<input class="left" type="radio" name="input_cd"/>
+								<span class="left">仓单号:11234466</span>
+							</label>
+							<a href="javascript:;">
+								<span class="img right"><img src="../../img/back_g.png"/></span>
+							</a>
+						</span>
+					</p>
+					<p>
+						<span class="tit">品名：</span>
+						<span class="val">0.3FLDVG</span>
+					</p>
+					<p>
+						<span class="tit">数量：</span>
+						<span class="val">100</span>
+					</p>
+				</li><li class="cd-list">
+					<p class="borderBottom">
+						<span class="title">
+							<label>
+								<input class="left" type="radio" name="input_cd"/>
+								<span class="left">仓单号:11234466</span>
+							</label>
+							<a href="javascript:;">
+								<span class="img right"><img src="../../img/back_g.png"/></span>
+							</a>
+						</span>
+					</p>
+					<p>
+						<span class="tit">品名：</span>
+						<span class="val">0.3FLDVG</span>
+					</p>
+					<p>
+						<span class="tit">数量：</span>
+						<span class="val">100</span>
+					</p>
+				</li><li class="cd-list">
+					<p class="borderBottom">
+						<span class="title">
+							<label>
+								<input class="left" type="radio" name="input_cd"/>
+								<span class="left">仓单号:11234466</span>
+							</label>
+							<a href="javascript:;">
+								<span class="img right"><img src="../../img/back_g.png"/></span>
+							</a>
+						</span>
+					</p>
+					<p>
+						<span class="tit">品名：</span>
+						<span class="val">0.3FLDVG</span>
+					</p>
+					<p>
+						<span class="tit">数量：</span>
+						<span class="val">100</span>
+					</p>
+				</li>
+				
+			</ul>
+		</div>
+		<footer class="footer-butten">
+			<input class="big" type="button" value="转入仓单" />
+		</footer>
+		
+	</body>
+</html>

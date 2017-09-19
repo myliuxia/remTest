@@ -1,0 +1,291 @@
+/*综合指数展示模块*/
+.index-1{
+	height: 3.9rem;
+	padding-top: 0.9rem;
+	width: 100%;
+	background: url(../img/index_b.png) no-repeat;
+	background-size: 100% 4.8rem;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.3rem;
+}
+.index-1 .title{
+	font-size: 0.76rem;
+	font-weight: 100;
+	margin-top:1.0rem ;
+}
+.index-1 .num-sum{
+	font-weight: 100;
+	font-size: 0.26rem;
+	margin-bottom: 0.2rem;
+}
+.index-1 .index-btn{
+	display: inline-block;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	width: auto;
+	margin: 0 auto;
+	padding: 0 0.3rem;
+	background-color: #FFFFFF;
+	color: #0077EE;
+	border-radius: 0.5rem;
+}
+
+/*菜单模块*/
+.menu{
+	text-align: center;
+	background-color: #FFFFFF;
+	background-image:url("../img/menu_bg.png");
+	background-repeat:no-repeat;
+	background-size:7.5rem 5.0rem;
+	background-position:center;
+	height: 5.0rem;
+}
+.menu li{
+	height: 2.5rem;
+	width: 2.5rem;
+	float: left;
+}
+.menu li>a{
+	display: inline-block;
+	height: 2.1rem;
+	width: 2.1rem;
+	padding-left: 0.4rem;
+	padding-top: 0.4rem;
+}
+.menu li>a>img{
+	height: 2.1rem;
+	width: 2.1rem;
+}
+/*推荐品种*/
+.recommend{
+	padding: 0.3rem;
+	font-size: 0.3rem;
+}
+
+.recommend .rec-title{
+	height: 0.7rem;
+	line-height: 0.7rem;
+}
+.recommend .rec-title span{
+	height: 0.4rem;
+	width: 0.4rem;
+	margin-right: 0.1rem;
+	vertical-align: middle;
+}
+.recommend .rec-title span img{
+	width: 0.4rem;
+	vertical-align: middle;
+}
+.recommend .variety{
+	background-color: #FFFFFF;
+	margin-bottom: 0.3rem;
+}
+
+.variety .var-title{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.2rem 0;
+	text-align: center;
+}
+/*指数增长时*/
+.variety.rise .var-title{
+	background-color: #FF6A54;
+}
+/*指数降低时*/
+.variety.drop .var-title{
+	background-color: #2CD3A1;
+}
+
+.variety .var-title a{
+	color: #FFFFFF;
+	width: 100%;
+	font-size: 0.3rem;
+	font-weight: bold;
+	text-align: center;
+}
+.variety .var-title a .title{
+	margin: 0 auto;
+	height: 0.4rem;
+	font-size: 0.4rem;
+	vertical-align: middle;
+}
+.variety .var-title a .title>img{
+	width: 0.32rem;
+	vertical-align: middle;
+}
+.variety .var-title a>img{
+	height: 0.4rem;
+	margin-right: 0.3rem;
+}
+.variety .var-change{
+	height: 0.7rem;
+	line-height: 0.7rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #2E2B51;
+}
+/*通过指数变化设置颜色*/
+.variety.rise .var-change .font-color{
+	color:#FF6A54;
+}
+.variety.drop .var-change .font-color{
+	color:#2CD3A1;
+}
+
+.variety .rou-img{
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 1.5rem;
+	margin: 0 auto;
+}
+.variety .rou-img img{
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.variety .var-price{
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.30rem;
+	font-weight: 800;
+	text-align: center;
+}
+
+/*砖石参数样式*/
+.variety .para{
+	height: 0.6rem;
+	padding: 0.25rem 0;
+	font-size: 0.24rem;
+}
+.variety .para .para1{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.variety .para .para1 p{
+	padding:0;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color: #C3C2CC;
+}
+.variety .para .para1 span{
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color: #636A7D;
+	font-weight: bold;
+}
+
+.bottom-nav{
+	height: 1.0rem;
+	width: 100%;
+}
+.bottom-nav a{
+	display: block;
+	width: 33%;
+	height: 1.0rem;
+	color: #C3C2CC;
+	float: left;
+}
+
+.bottom-nav a p{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+	text-align: center;
+} 
+.bottom-nav a .ind-img{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.1rem;
+	text-align: center;
+}
+.bottom-nav a .ind-img img{
+	width: 0.4rem;
+}
+.borderleft{
+	border-left: 0.02rem solid #C3C2CC;
+}
+.borderright{
+	border-right: 0.02rem solid #C3C2CC;
+}
+/*==== 幻灯片样式 ====*/
+
+/*幻灯片样式*/
+.swiper-container{
+	width: 100%;
+	height: 4.8rem;
+	max-width: 100%;
+	max-height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 0.3rem;
+	width:100%;
+	background-color:#0077EE;
+	/* background: url(../img/index_b.png) no-repeat;
+	background-size: 100% 4.8rem; */
+	color: #FFFFFF;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide .swiper-img{
+	position:absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+}
+.swiper-slide .swiper-img img{
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide .title{
+	display:block;
+	font-size: 0.76rem;
+	font-weight: 100;
+	position:absolute;
+	z-index: 2;
+	top:1.9rem ;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.swiper-slide .num-sum{
+	position:absolute;
+	z-index: 2;
+	display:block;
+	font-weight: 100;
+	font-size: 0.26rem;
+	top: 2.9rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.swiper-slide .index-btn{
+	display: inline-table;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	width: auto;
+	margin: 0 auto;
+	padding: 0 0.3rem;
+	background-color: #FFFFFF;
+	color: #0077EE;
+	border-radius: 0.5rem;
+	position:absolute;
+	z-index: 2;
+	top:3.4rem;
+	transform:translate(-50%,0%);
+}

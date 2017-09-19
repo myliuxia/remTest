@@ -1,0 +1,204 @@
+/*筛选菜单*/
+.screen{
+	position: fixed;
+	z-index: 20;
+	top:0.9rem;
+	width: 7.50rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background-color: #FFFFFF;
+	overflow-x:auto;
+	overflow-y: hidden;
+}
+.screen a{
+	font-size: 0.30rem;
+	display: block;
+	float: left;
+	color: #A3A7BE;
+	text-align: center;
+}
+.screen a.ratio5{
+	width: 50%;
+}
+.screen .screen-menu{
+	height: 0.9rem;
+	line-height: 0.9rem;
+	width: 118%;
+}
+.screen a.auto{
+	width: auto;
+	margin: 0 0.3rem;
+	float: left;
+}
+.screen a.active{
+	color: #0077EE;
+	height: 0.86rem;
+	border-bottom: 0.04rem solid #0077EE;
+}
+.screen a span img{
+	width: 0.11rem;
+}
+
+
+/*交易详情页面*/
+.jyxq li{
+	margin: 0.3rem 0;
+	background-color: #FFFFFF;
+	font-size: 0.3rem;
+}
+.jyxq li a{
+	display: block;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	color:#2E2B51;
+	padding: 0 0.3rem;
+}
+
+.jyxq li a img{
+	margin-top: 0.3rem;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+
+
+/*仓单列表样式*/
+.cd-list{
+	margin: 0.2rem;
+	font-size: 0.28rem;
+	background-color: #FFFFFF;
+}
+.cd-list p{
+	padding: 0 0.2rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #636A7D;
+}
+.cd-list p a.title{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #2E2B51;
+}
+.cd-list p span.img{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	vertical-align: middle;
+}
+.cd-list p span.img img{
+	width: 0.4rem;
+	vertical-align: middle;
+}
+.cd-list p span.tit{
+	float: left;
+}
+.cd-list p span.val{
+	color: #2E2B51;
+	float: right;
+	font-weight: bold;
+}
+/*按钮样式*/
+.foot-btn{
+	background-color: #FFFFFF;
+	position: fixed;
+	z-index: 20;
+	width: 6.9rem;
+	padding: 0.2rem 0.3rem 0;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-top: 0.02rem solid #C9CACD;
+	bottom: 0;
+}
+
+.btn{
+	display: block;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	width: 1.4rem;
+	text-align: center;
+	color: #0077EE;
+	font-size: 0.28rem;
+	border: 0.03rem solid #0077EE;
+	border-radius: 0.05rem;
+	margin-left: 0.3rem;
+	vertical-align: middle;
+}
+
+/*仓单详情*/
+.cd-tit{
+	margin: 0 0.2rem;
+	color: #636A7D;
+	line-height: 0.35rem;
+	padding-top: 0.3rem;
+	font-size: 0.28rem;
+	font-weight: bold;
+}
+.cd-con{
+	background-color: #FFFFFF;
+	margin: 0.2rem;
+	font-size: 0.28rem;
+	border-radius: 0.05rem;
+	color: #2E2B51;
+}
+.cd-con p{
+	line-height: 1.0rem;
+	height: 1.0rem;
+	padding: 0 0.3rem;
+}
+.cd-con p input[type="text"]{
+	line-height: 1.0rem;
+	height: 1.0rem;
+	font-size: 0.28rem;
+	color: #2E2B51;
+	float: right;
+	font-weight: bold;
+	text-align: right;
+}
+/*提示样式*/
+.hint{
+	color:#FF6A54;
+	font-size: 0.24rem;
+	margin: 0 0.2rem;
+}
+
+/*出库申请样式*/
+.cksq{
+	background-color: #FFFFFF;
+	font-size: 0.28rem;
+	margin: 0.3rem 0;
+	padding-bottom: 0.3rem;
+}
+.cksq p{
+	line-height: 1.0rem;
+	padding: 0 0.3rem;
+}
+.cksq p input[type="text"]{
+	line-height: 1.0rem;
+	font-size: 0.28rem;
+	float: right;
+	text-align: right;
+	font-weight: bold;
+}
+.cksq p.sel-radio{
+	line-height: 0.4rem;
+	margin: 0.2rem 0;
+	vertical-align: middle;
+	overflow: auto;
+	zoom: 1;
+}
+.cksq p input[type="radio"]{
+	margin-right: 0.2rem;
+}
+.cksq p.sel-radio .address{
+	width: 4.8rem;
+	padding-right: 0.5rem;
+	margin-left: 0.3rem;
+	float: right;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../../img/back_g.png) no-repeat;
+	background-position: right center;
+	background-size: 0.4rem 0.4rem; 
+	color: #2E2B51;
+}
+
+

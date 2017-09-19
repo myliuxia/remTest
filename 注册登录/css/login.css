@@ -1,0 +1,111 @@
+html,body,.content{
+	background-color: #FFFFFF;
+}
+.loginfrm{
+	padding: 0.1rem 0.3rem;
+}
+.loginfrm p{
+	line-height: 1.0rem;
+	font-size: 0.3rem;
+	overflow: auto;
+	zoom: 1;
+	margin: 0.3rem 0;
+	
+	height: 1.0rem;
+}
+.loginfrm p input{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.3rem 0.24rem;
+	width: 5.1rem;
+	font-size: 0.28rem;
+	float: left;
+}
+
+.loginfrm p label{
+	display: inline-block;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	width: 1.3rem;
+	vertical-align: middle;
+	float: left;
+}
+.loginfrm p label.log-img{
+	text-align: center;
+}
+.loginfrm p label>img{
+	width: 0.4rem;
+	vertical-align: middle;
+}
+
+/*验证码栏样式*/
+.loginfrm .vercode{
+	height: 1.0rem;
+	
+}
+.loginfrm .code{
+	width: 4.2rem;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	font-size: 0.3rem;
+	overflow: auto;
+	zoom: 1;
+	height: 1.0rem;
+	float: left;
+}
+.loginfrm .code input{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.3rem 0.24rem;
+	width: 2.7rem;
+	font-size: 0.28rem;
+	float: left;
+}
+.loginfrm .code label{
+	display: inline-block;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	width: 1.0rem;
+	vertical-align: middle;
+	float: left;
+}
+.loginfrm .code-img{
+	width: 2.3rem;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	float: right;
+	border-radius: 0.05rem;
+	border: 0.03rem solid #CCCEDB;
+	color: #CCCEDB;
+	font-size: 0.36rem;
+	text-align: center;
+}
+
+/*按钮样式*/
+.loginfrm .btn{
+	padding: 0;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	font-size: 0.36rem;
+	text-align: center;
+	width: 6.84rem;
+	margin: 0 auto;
+	border: 0.03rem solid #0077EE;
+	border-radius: 0.05rem;
+	margin-top: 0.5rem;
+}
+.loginfrm .btn.log{
+	background-color: #0077EE;
+	color: #FFFFFF;
+}
+.loginfrm .btn.reg{
+	background-color: #FFFFFF;
+	color: #0077EE;
+}
+.loginfrm p.none{
+	margin: 0;
+	padding: 0;
+}
+.loginfrm p a{
+	color: #636A7D;
+}

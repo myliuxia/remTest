@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>议价管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/yjgl.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/init.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			.content{
+					padding-top: 1.8rem;
+				}
+		</style>
+	</head>
+	<body>
+		<header class="myheader blue">
+			<a class="left" href="javascript:;">
+				<img src="../img/back_w.png"/>
+			</a>
+			<span class="bold">议价管理</span>
+			<span class="right" style="width:0.8rem; height: 100%;"></span>
+		</header>
+		<!--筛选菜单-->
+		<div class="screen">
+			<a class="active" href="javascript:;">全部议价</a>
+			<a href="javascript:;">发起的议价</a>
+			<a href="javascript:;">接收的议价</a>
+		</div>
+		<div class="content" >
+			<ul>
+				<li class="pact">
+					<p class="borderBottom row">
+						<a class="title" href="yjgl-xq.html">
+							<span class="direction">接收</span>
+							<span class="left">合同编号：ADE15423967</span>
+							<span class="right font-blue">等待答复</span>
+						</a>
+					</p>
+					<p class="row">
+						<span class="bigtit">G30V1SS1</span>
+						<span class="business">求购</span>
+					</p>
+					<div class="yj-data">
+						<div class="yj-after">
+							<div class="half">
+								议价：<span class="bold">￥1546/ct</span>
+							</div>
+							<div class="half">
+								议价数量：<span class="bold">55颗</span>
+							</div>
+						</div>
+						<div class="yj-before">
+							<div class="half">
+								原价：<span class="bold">￥1234/ct</span>
+							</div>
+							<div class="half">
+								原数量：<span class="bold">18颗</span>
+							</div>
+						</div>
+					</div>
+					<div class="font-btn">
+						<a class="btn" id="refuse" href="javascript:;">拒绝</a>
+						<a class="btn" href="javascript:;">同意</a>
+					</div>	
+				</li>
+				
+				<li class="pact">
+					<p class="borderBottom row">
+						<a class="title" href="yjgl-xq.html">
+							<span class="direction">发起</span>
+							<span class="left">合同编号：ADE15423967</span>
+							<span class="right font-blue">等待答复</span>
+						</a>
+					</p>
+					<p class="row">
+						<span class="bigtit">G30V1SS1</span>
+						<span class="business">在售</span>
+					</p>
+					<div class="yj-data">
+						<div class="yj-after">
+							<div class="half">
+								议价：<span class="bold">￥1546/ct</span>
+							</div>
+							<div class="half">
+								议价数量：<span class="bold">55颗</span>
+							</div>
+						</div>
+						<div class="yj-before">
+							<div class="half">
+								原价：<span class="bold">￥1234/ct</span>
+							</div>
+							<div class="half">
+								原数量：<span class="bold">18颗</span>
+							</div>
+						</div>
+					</div>
+					<div class="font-btn">
+						<a class="btn" href="javascript:;">撤销议价</a>
+					</div>	
+				</li>
+			</ul>
+		</div>
+		
+		 <!--提示框-->
+        <div class="myalter" id="myalter">
+        	<div class="alter-con">
+        		<div class="img">
+        			<img src="../img/tanh.png"/>
+        		</div>
+        		<div class="con">
+        			您确定要拒绝 030FLDVG 的议价申请吗<br />
+        			【议价号12341】
+        		</div>
+        		<a class="btn-ok">确定</a>
+        		<a class="btn-cancel">取消</a>
+        	</div>
+        </div>
+        <script type="text/javascript">
+        	$(function(){
+        		$('#refuse').on('click',function(){
+        			$('#myalter').show();
+        		})
+        		$('.btn-cancel').on('click',function(){
+        			$('#myalter').hide();
+        		})
+        	})
+        </script>
+		
+	</body>
+</html>

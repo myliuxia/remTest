@@ -1,0 +1,153 @@
+/*筛选菜单*/
+.screen{
+	position: fixed;
+	z-index: 20;
+	top:0.9rem;
+	width: 7.50rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background-color: #FFFFFF;
+	overflow-x:auto;
+	overflow-y: hidden;
+}
+.screen a{
+	font-size: 0.30rem;
+	display: block;
+	float: left;
+	color: #A3A7BE;
+	text-align: center;
+}
+.screen a.ratio5{
+	width: 50%;
+}
+.screen .screen-menu{
+	height: 0.9rem;
+	line-height: 0.9rem;
+	width: 118%;
+}
+.screen a.auto{
+	width: auto;
+	margin: 0 0.3rem;
+	float: left;
+}
+.screen a.active{
+	color: #0077EE;
+	height: 0.86rem;
+	border-bottom: 0.04rem solid #0077EE;
+}
+.screen a span img{
+	width: 0.11rem;
+}
+
+
+/*主页面导航栏*/
+.home-menu li.menu{
+	margin: 0.3rem 0;
+	background-color: #FFFFFF;
+	font-size: 0.3rem;
+}
+.home-menu li.menu a{
+	display: block;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	color:#2E2B51;
+	padding: 0 0.3rem;
+}
+.home-menu li.menu a img{
+	margin-top: 0.3rem;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.home-menu li.input{
+	margin: 0.3rem 0;
+	background-color: #FFFFFF;
+	font-size: 0.3rem;
+}
+.home-menu li.input p{
+	height: 1.0rem;
+	line-height: 1.0rem;
+	color:#2E2B51;
+	padding: 0 0.3rem;
+}
+.home-menu li.input p label{
+	width: 1.3rem;
+	float: left;
+}
+.home-menu li.input p input[type="text"]{
+	height: 1.0rem;
+	line-height: 1.0rem;
+	width: 5.0rem;
+	padding-right: 0.5rem;
+	float: right;
+	text-align: right;
+	font-size: 0.3rem;
+	font-weight: bold;
+	background: url(../../img/back_g.png) no-repeat right center;
+	background-size: 0.4rem 0.4rem;
+}
+/*信息展示栏*/
+.Infobar .tit{
+	margin: 0 0.2rem;
+	color: #636A7D;
+	line-height: 0.35rem;
+	padding-top: 0.3rem;
+	font-size: 0.28rem;
+	font-weight: bold;
+}
+.Infobar .con{
+	background-color: #FFFFFF;
+	margin: 0.2rem;
+	font-size: 0.28rem;
+	border-radius: 0.05rem;
+	color: #2E2B51;
+}
+.Infobar .con p{
+	line-height: 1.0rem;
+	height: 1.0rem;
+	padding: 0 0.3rem;
+}
+.Infobar .con p input[type="text"]{
+	line-height: 1.0rem;
+	height: 1.0rem;
+	font-size: 0.28rem;
+	color: #2E2B51;
+	float: right;
+	font-weight: bold;
+	text-align: right;
+}
+
+/*交易流水列表样式*/
+.Infobar .info-list{
+	margin: 0.2rem;
+	font-size: 0.28rem;
+	background-color: #FFFFFF;
+}
+.Infobar .info-list p{
+	padding: 0 0.2rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #636A7D;
+}
+.Infobar .info-list p a.title{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #2E2B51;
+}
+.Infobar .info-list p span.img{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	vertical-align: middle;
+}
+.Infobar .info-list p span.img img{
+	width: 0.4rem;
+	vertical-align: middle;
+}
+.Infobar .info-list p span.tit-s{
+	float: left;
+}
+.Infobar .info-list p span.val{
+	color: #636A7D;
+	float: right;
+	font-weight: bold;
+}

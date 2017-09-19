@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>收藏</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/collect.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/init.js" type="text/javascript" charset="utf-8"></script>	
+	</head>
+	<body>
+		<header class="myheader blue">
+			<a class="left" href="javascript:;">
+				<img src="../img/back_w.png"/>
+			</a>
+			<span class="bold">收藏</span>
+			<a class="right" href="javascript:;">完成</a>
+		</header>
+		<div class="content" >
+			<ul class="edit-list">
+				<li>
+					<label>
+						<input type="checkbox" name="collect"  value=""/>
+						<div class="col-content">
+							<p class="title">30克拉极品钻石100颗现货平台发售</p>
+							<p class="date">发布时间：2016年11月20日</p>
+						</div>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" name="collect"  value=""/>
+						<div class="col-content">
+							<p class="title">30克拉极品钻石100颗现货平台发售</p>
+							<p class="date">发布时间：2016年11月20日</p>
+						</div>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" name="collect"  value=""/>
+						<div class="col-content">
+							<p class="title">30克拉极品钻石100颗现货平台发售</p>
+							<p class="date">发布时间：2016年11月20日</p>
+						</div>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" name="collect"  value=""/>
+						<div class="col-content">
+							<p class="title">30克拉极品钻石100颗现货平台发售</p>
+							<p class="date">发布时间：2016年11月20日</p>
+						</div>
+					</label>
+				</li>
+			</ul>
+			<div class="footer-butten">
+				<label class="check-all">
+					<input type="checkbox" name="" id="check-all" value="" onclick="checkAll('collect')"/>
+					全选
+				</label>
+				<a class="small right" href="javascript:;">
+					删除
+				</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			  function   checkAll(Obj){
+				  var collid = document.getElementById("check-all")
+				  var coll = document.getElementsByName(Obj)
+				  if (collid.checked){
+				  	 console.log("llll");
+				     for(var i = 0; i < coll.length; i++)
+				       coll[i].checked = true;
+				  }else{
+				     for(var i = 0; i < coll.length; i++)
+				       coll[i].checked = false;
+				  }
+			  }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,226 @@
+html{
+	background-color: #E5E4EA;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #96BCE3; 
+}
+input:-ms-input-placeholder {
+color: #96BCE3;
+}
+input::-webkit-input-placeholder {
+color: #96BCE3;
+}
+.mysearch{
+	
+}
+
+.mysearch input[type=text]{
+	width: 4.5rem;
+	margin-left: 0.2rem;
+	margin-top: 0.1rem;
+	border: none;
+	border-radius: 0.05rem;
+	background-color: ;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.15rem 0.5rem 0.15rem 0.9rem;
+	float: left;
+	color: #FFFFFF;
+	font-size: 0.34rem;
+	background-color: #005FBE;
+}
+
+.mysearch input[type=button]{
+	border:none;
+	background: none;
+	color: #FFFFFF;
+	font-size: 0.34rem;
+	width: 1.0rem;
+	height: 0.7rem;
+	line-height: 0.4rem;
+	padding: 0.15rem;
+}
+
+#search-btn{
+	margin: 0;
+	padding: 0;
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	left: 0.45rem;
+}
+#search-btn img{
+	width: 0.4rem;
+}
+#clear{
+	margin: 0;
+	padding: 0;
+	display: none;
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	left: 5.6rem;
+}
+#clear img{
+	width: 100%;
+}
+
+/*商品列表*/
+.commodity{
+	border-radius: 0.05rem;
+	margin:0.2rem;
+	background-color: #FFFFFF;
+}
+/*商品的基本介绍*/
+.commodity .intr{
+	height: 1.0rem;
+	padding: 0.3rem 0.2rem;
+}
+.commodity .intr .img{
+	width: 0.8rem;
+	float: left;
+}
+.commodity .intr .img img{
+	width: 0.8rem;
+}
+.commodity .intr .name{
+	margin-left: 0.2rem;
+	width: 2.8rem;
+	float: left;
+}
+.commodity .intr .name p{
+	height: 0.6rem;
+	line-height: 0.6rem;
+	overflow: hidden;
+	color: #2E2B51;
+	font-size: 0.3rem;
+	
+}
+
+.commodity .intr .name .rou{
+	display: block;
+	float: left;
+	font-size: 0.24rem;
+	color: #FFFFFF;
+	width: auto;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0 0.2rem;
+	border-radius: 0.2rem;
+}
+.commodity .intr .name .rou.rise{
+	padding-left:0.5rem;
+	background: #FF6A54 url(../../img/arrow_u.png) no-repeat;
+	background-size: 0.18rem 0.21rem;
+	background-position: 0.18rem;
+}
+.commodity .intr .name .rou.drop{
+	padding-left:0.5rem;
+	background: #2CD3A1 url(../../img/arrow_d.png) no-repeat;
+	background-size: 0.18rem 0.21rem;
+	background-position: 0.18rem;
+}
+.commodity .intr .name span img{
+	width: 0.18rem;
+}
+.commodity .intr .price{
+	width: 2.8rem;
+	float: right;
+	text-align: right;
+}
+.commodity .intr .price p{
+	height: 0.6rem;
+	line-height: 0.6rem;
+	color: #2E2B51;
+	font-size: 0.3rem;
+	font-weight: 700;
+}
+.commodity .intr .price span{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	color: #C3C2CC;
+	font-size: 0.24rem;
+}
+
+/*商品的参数*/
+.commodity .para{
+	height: 0.6rem;
+	padding: 0.25rem 0;
+	background-color: #F7F7FD;
+	font-size: 0.24rem;
+}
+.commodity .para .para1{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.commodity .para .para1 p{
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color: #C3C2CC;
+}
+.commodity .para .para1 span{
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color: #636A7D;
+	font-weight: 700;
+}
+/*指数查询列表*/
+.commodity .zs{
+	height: 1.0rem;
+	padding: 0.3rem 0.2rem;
+}
+.commodity .zs .zs-left{
+	float: left;
+	width: 4.0rem;
+	height: 0.9rem;
+}
+.commodity .zs .zs-left p{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	color: #2E2B51;
+	font-size: 0.3rem;
+}.commodity .zs .zs-left p>span{
+	margin-right: 0.25rem;
+}
+.commodity .zs .zs-left>span{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	color: #C3C2CC;
+	font-size: 0.24rem;
+}
+.commodity .zs .zs-right{
+	float:right;
+	text-align: right;
+	width: 2.5rem;
+	height: 0.9rem;
+}
+.commodity .zs .zs-right.rise p{
+	color:#FF6A54;
+}
+.commodity .zs .zs-right.rise span{
+	background-color:#FF6A54;
+}
+.commodity .zs .zs-right.drop p{
+	color:#2CD3A1;
+}
+.commodity .zs .zs-right.drop span{
+	background-color:#2CD3A1;
+}
+.commodity .zs .zs-right p{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 0.3rem;
+}
+.commodity .zs .zs-right span{
+	display: block;
+	float: right;
+	font-size: 0.24rem;
+	color: #FFFFFF;
+	width: auto;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0 0.2rem;
+	border-radius: 0.2rem;
+}

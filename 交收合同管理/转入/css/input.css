@@ -1,0 +1,124 @@
+/*头样式*/
+.mysearch input[type=text]{
+	width: 4.8rem;
+	margin-top: 0.1rem;
+	border: none;
+	border-radius: 0.05rem;
+	background-color: ;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.15rem 0.5rem 0.15rem 0.9rem;
+	float: left;
+	color: #FFFFFF;
+	font-size: 0.34rem;
+	background-color: #005FBE;
+}
+
+#search-btn{
+	margin: 0;
+	padding: 0;
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	left: 0.45rem;
+}
+#search-btn img{
+	width: 0.4rem;
+}
+#clear{
+	margin: 0;
+	padding: 0;
+	display: none;
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	left: 5.8rem;
+}
+#clear img{
+	width: 100%;
+}
+
+/*仓单列表样式*/
+.cd-list{
+	margin: 0.2rem;
+	font-size: 0.28rem;
+	background-color: #FFFFFF;
+}
+.cd-list p{
+	padding: 0 0.2rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #636A7D;
+}
+.cd-list p .title{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #2E2B51;
+	vertical-align: middle;
+}
+.cd-list p span.img{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	vertical-align: middle;
+}
+.cd-list p span.img img{
+	width: 0.4rem;
+	vertical-align: middle;
+}
+.cd-list p span.tit{
+	float: left;
+}
+.cd-list p span.val{
+	color: #2E2B51;
+	float: right;
+	font-weight: bold;
+}
+.cd-list p input[type="radio"]{
+	margin-top: 0.2rem;
+}
+/*内容*/
+.home-menu li{
+	margin: 0.3rem 0 0;
+	background-color: #FFFFFF;
+	font-size: 0.3rem;
+}
+.home-menu li p{
+	display: block;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	color:#2E2B51;
+	padding: 0 0.3rem;
+}
+/*地脚按钮*/
+.pop-btn{
+	font-size: 0.34rem;
+	padding-left: 0.3rem;
+	height: 1.0rem;
+}
+.pop-btn .pop-sum{
+	width: 4.5rem;
+	height: 1.0rem;
+	float: left;
+}
+.pop-btn .pop-sum p.sum{
+	height: 0.6rem;
+	line-height: 0.8rem;
+}
+.pop-btn .pop-sum p.balance{
+	height: 0.4rem;
+	line-height: 0.3rem;
+	font-size: 0.20rem;
+	color: #C3C2CC;
+}
+.pop-btn .small-btn{
+	display: block;
+	width: 2.6rem;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	text-align: center;
+	background-color: #0077EE;
+	color: #FFFFFF;
+	font-size: 0.36rem;
+	float: right;
+}

@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+/*头部*/
+.headport{
+	width:auto;
+	height:0.8rem;
+	line-height:0.8rem;
+	display:block;
+	float:left;
+	margin-left:0.3rem;
+	font-size:0.32rem;
+}
+.headport img{
+	width:0.4rem;
+	height:0.4rem;
+	display:block;
+	float:left;
+	margin-top:0.2rem;
+	margin-right:0.2rem;
+}
+/*账户余额*/
+.money_box{
+	width:100%;
+	height:4.7rem;
+	background-color:#0077ee;	
+}
+.money_box .banlance{
+	display:block;
+	width:100%;
+	padding-top:1rem;
+	text-align:center;
+	font-size:0.7rem;
+	color:#fff;	
+}
+.money_box .banlance_text{
+	display:block;
+	width:100%;
+	line-height:0.24rem;
+	text-align:center;
+	font-size:0.24rem;
+	color:#fff;	
+}
+.topup{
+	display:block;
+	width:50%;
+	height:2rem;
+	float:left;	
+	color:#fff;
+	 text-align:center;
+	 
+	 overflow:hidden;
+}
+.topup img{
+	display:block;
+	float:left;	
+	width:0.6rem;
+	margin-top:0.8rem;
+	margin-left:1.57rem;
+}
+.topup span{
+	dislpay:block;
+	float:left;
+	width:100%;
+	margin-top:0.2rem;
+	text-align:center;
+	font-size:0.24rem;
+}
+
+/*待处理信息*/
+.loan{
+	width:100%;
+	height:1.4rem;
+	background-color:#fff;
+	
+}
+.loanpart{
+	display:block;
+	width:20%;
+	float:left;	
+	color:#2e2b51;
+}
+.loanpart p{
+	display:block;
+	width:100%;
+	line-height:0.5rem;
+	font-size:0.24rem;
+	text-align:center;
+	margin-top:0.2rem;
+}
+.loanpart span{
+	display:block;
+	width:100%;
+	color:#0077ee;
+	line-height:0.5rem;
+	font-size:0.36rem;
+	text-align:center;
+}
+.loanpart .zerocolor{
+	color:#a4a8bf;
+}
+
+
+.management{
+	width:100%;
+	height:auto;
+	background-color:#fff;
+	margin:0.3rem 0;
+}
+.manage{
+	display:block;
+	width:7.2rem;
+	height:0.98rem;
+	margin-left:0.3rem;	
+	border-bottom:solid 0.01rem #e5e4ea;
+}
+.manage span{
+	display:block;
+	width:auto;
+	float:left;
+	font-size:0.28rem;
+	color:#2e2b51;
+	line-height:0.98rem;
+}
+.manage img{
+	display:block;
+	width:0.4rem;
+	float:right;
+	margin-top:0.29rem;
+	margin-right:0.3rem;
+}
+
+
+
+
+
+
+
+

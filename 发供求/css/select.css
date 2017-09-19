@@ -1,0 +1,50 @@
+html{
+	background-color: #E5E4EA;
+}
+
+/*单选按钮选择按钮*/
+.select{
+	position: relative;
+	background-color: #FFFFFF;
+	font-size: 0.28rem;
+	margin: 0.3rem 0;
+	
+}
+.select p{
+	padding: 0.3rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+.select p.borderBottom{
+	border-bottom: 0.02rem solid #E5E4EA;
+}
+
+.select p .select-option{
+	display: block;
+	width: 0.6rem;
+	height: 0.4rem;
+	background: url(../../img/null_select.png) no-repeat;
+	background-position: 0.03rem;
+	background-size: 0.36rem 0.36rem;
+}
+.select p .select-option.active{
+	background: url(../../img/selected.png) no-repeat;
+	background-position: 0.03rem;
+	background-size: 0.36rem 0.36rem;
+}
+.select p input{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.28rem;
+}
+.select p input:focus,.select p input:active{
+	border: none;
+}
+.select p a{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.select p a img{
+	width: 0.4rem;
+}

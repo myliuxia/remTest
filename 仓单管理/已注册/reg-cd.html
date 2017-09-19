@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>注册仓单管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/cdgl.css"/>
+		<script src="../../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/search.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			.content{
+					padding-top: 1.8rem;
+				}
+		</style>
+	</head>
+	<body>
+		<header class="myheader blue">
+			<div class="headertitle">
+				<a class="left" href="../cdgl.html">
+					<img src="../../img/back_w.png"/>
+				</a>
+				<span class="bold">注册仓单管理</span>
+				<a class="right" href="javascript:;" onclick="showSreach()">
+					<img src="../../img/search.png"/>
+				</a>
+			</div>
+			<form class="mysearch" action="javascript:;" method="post" hidden="hidden">
+				<a href="javascript:;" id="search-btn"><img src="../img/search2.png"/></a>
+				<input type="text" name="search_name" id="search_name" placeholder="品种名称"
+					 onfocus="onsreachfocus()" onblur="onsreachblur()"/>
+				<a href="javascript:;" id="clear" onclick="onClearClick()"><img src="../img/delete.png"/></a>
+				<input type="button" value="取消" onclick="hideSreach()"/>
+			</form>
+		</header>
+		
+		<!--筛选菜单-->
+		<div class="screen">
+			<div class="screen-menu">
+				<a class="auto active cd1-btn" href="javascript:;">可用仓单</a>
+				<a class="auto cd2-btn" href="javascript:;">融资仓单</a>
+				<a class="auto cd2-btn" href="javascript:;">卖仓单</a>
+				<a class="auto cd2-btn" href="javascript:;">交收仓单</a>
+				<a class="auto cd2-btn" href="javascript:;">冻结仓单</a>
+			</div>
+		</div>
+		<div class="content" >
+			<!--出库仓单列表-->
+			<ul id="cd2" hidden="hidden">
+				<li class="cd-list">
+					<p class="borderBottom">
+						<a class="title" href="reg-cdxq.html">
+							<span class="left">仓单号:11234466</span>
+							<span class="img right"><img src="../../img/back_g.png"/></span>
+						</a>
+					</p>
+					<p>
+						<span class="tit">品名：</span>
+						<span class="val">0.3FLDVG</span>
+					</p>
+					<p>
+						<span class="tit">数量：</span>
+						<span class="val">100</span>
+					</p>
+					<p>
+						<span class="tit">最后变更时间：</span>
+						<span class="val">2016年01月01日</span>
+					</p>
+				</li>
+				
+				<li class="cd-list">
+					<p class="borderBottom">
+						<a class="title" href="reg-cdxq.html">
+							<span class="left">仓单号:11234466</span>
+							<span class="img right"><img src="../../img/back_g.png"/></span>
+						</a>
+					</p>
+					<p>
+						<span class="tit">品名：</span>
+						<span class="val">0.3FLDVG</span>
+					</p>
+					<p>
+						<span class="tit">数量：</span>
+						<span class="val">100</span>
+					</p>
+					<p>
+						<span class="tit">最后变更时间：</span>
+						<span class="val">2016年01月01日</span>
+					</p>
+				</li>
+				
+			</ul>
+			
+			<!--出库申请中仓单管理-->
+			<ul id="cd1">
+				<li class="cd-list">
+					<p class="borderBottom">
+						<a class="title" href="usable-cdxq.html">
+							<span class="left">仓单号:11234466</span>
+							<span class="img right"><img src="../../img/back_g.png"/></span>
+						</a>
+					</p>
+					<p>
+						<span class="tit">品名：</span>
+						<span class="val">0.3FLDVG</span>
+					</p>
+					<p>
+						<span class="tit">数量：</span>
+						<span class="val">100</span>
+					</p>
+					<p>
+						<a class="btn right" href="javascript:;">注销</a>
+					</p>
+				</li>
+				
+				<li class="cd-list">
+					<p class="borderBottom">
+						<a class="title" href="usable-cdxq.html">
+							<span class="left">仓单号:11234466</span>
+							<span class="img right"><img src="../../img/back_g.png"/></span>
+						</a>
+					</p>
+					<p>
+						<span class="tit">品名：</span>
+						<span class="val">0.3FLDVG</span>
+					</p>
+					<p>
+						<span class="tit">数量：</span>
+						<span class="val">100</span>
+					</p>
+					<p>
+						<a class="btn right" href="javascript:;">注销</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('.cd1-btn').on('click',function(){
+					$(this).addClass('active');
+					$(this).siblings().removeClass('active');
+					$('#cd2').hide();
+					if($('#cd1').is(":hidden")){
+						$('#cd1').show();
+					}
+				});
+				$('.cd2-btn').on('click',function(){
+					$(this).addClass('active');
+					$(this).siblings().removeClass('active');
+					$('#cd1').hide();
+					if($('#cd2').is(":hidden")){
+						$('#cd2').show();
+					}
+				});
+			})
+		</script>
+		
+	</body>
+</html>

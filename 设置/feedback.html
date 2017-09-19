@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>意见反馈</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/set.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/init.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="myheader blue">
+			<a class="left" href="set.html">
+				<img src="../img/back_w.png"/>
+			</a>
+			<span class="bold">意见反馈</span>
+			<span class="right" style="width:0.8rem; height: 100%;"></span>
+		</header>
+		<div class="content" >
+			<form class="feed-frm" action="javascript:;" method="post">
+				<p class="item">
+					<label for="problemType">问题类型</label>
+					<input class="select" type="text" name="problemType" id="problemType" placeholder="请选择您反馈的问题类型"/>
+				</p>
+				<div class="item">
+					<div class="row">
+						<label for="idea">
+							问题和意见描述
+						</label>
+					</div>
+					<textarea placeholder="请详细描述您的具体问题和建议" name="idea" id="idea" rows="6" maxlength="200"></textarea>
+				</div>
+				
+				<div class="input-img" id="imgs">
+					<div class="row">
+						<label for="">上传问题图片</label>
+					</div>
+					<div class="fileinput-btn">
+						<img src="../img/add-img.png"/>
+						<input type="file" id="file1" accept="image/*"/>
+					</div>
+					<div class="fileinput-btn" style="display: none;">
+						<img src="../img/add-img.png"/>
+						<input type="file" id="file2" accept="image/*"/>
+					</div>
+					<div class="fileinput-btn" style="display: none;">
+						<img src="../img/add-img.png"/>
+						<input type="file" id="file3" accept="image/*"/>
+					</div>
+				</div>
+				
+				
+				<p class="item">
+					<label for="phone">联系电话</label>
+					<input type="text" name="phone" id="phone" placeholder="请输入联系电话" value="138***4567"/>
+				</p>
+				
+				<div class="footer-butten">
+					<input class="big" type="submit" value="提交"/>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script>
+	/*function onchange(){
+			var $next = $(this).parent().next();
+			var $file = $(this);
+			var fileObj = $file[0];
+			var windowURL = window.URL || window.webkitURL;
+			var dataURL;
+			var $img = $(this).siblings('img');
+			if(fileObj && fileObj.files && fileObj.files[0]){
+			dataURL = windowURL.createObjectURL(fileObj.files[0]);
+			$img.attr('src',dataURL);
+			}
+			$next.show();
+			
+	}*/
+	$(function(){
+		$('input[type="file"]').change(function() {
+			var $next = $(this).parent().next();
+			var $file = $(this);
+			var fileObj = $file[0];
+			var windowURL = window.URL || window.webkitURL;
+			var dataURL;
+			var $img = $(this).siblings('img');
+		 
+			if(fileObj && fileObj.files && fileObj.files[0]){
+				dataURL = windowURL.createObjectURL(fileObj.files[0]);
+				$img.attr('src',dataURL);
+				$next.show();
+			}
+			
+		});
+	})
+	
+     
+	/*window.onload = function() {
+		var input = document.getElementById("file");
+		var result, div;
+		if(typeof FileReader === 'undefined') {
+			result.innerHTML = "抱歉，你的浏览器不支持 FileReader";
+			input.setAttribute('disabled', 'disabled');
+		} else {
+			input.addEventListener('change', readFile, false);
+		}　　　　　 //handler   
+	}
+	
+	function readFile() {
+		if(this.files.length>3){
+			alert("上传图片不能超过3张！")
+		}else{
+			for(var i = 0; i < this.files.length; i++) {
+				var reader = new FileReader();   
+	            reader.readAsDataURL(this.files[i]);   
+	            reader.onload = function(e){   
+	            result = '<img src="'+this.result+'" alt=""/>';   
+	            div = document.createElement('div');   
+	            div.innerHTML = result;  
+	            document.getElementById('imgs').appendChild(div); 	　　
+				}
+			}
+		}
+		
+	}*/
+</script>
+	
+</html>

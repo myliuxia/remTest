@@ -1,0 +1,46 @@
+/*消息列表样式*/
+.information-list li{
+	position: relative;
+	padding: 0.25rem 0.3rem 0.25rem 0.6rem;
+	background-color: #FFFFFF;
+	font-size: 0.3rem;
+	height: 1.0rem;
+	border-bottom: 0.02rem solid #E5E4EA;
+}
+.information-list li.unread{
+	background: #FFFFFF url(../../img/circle_01.png) no-repeat;
+	background-position: left 0.12rem center;
+	background-size: 0.36rem 0.36rem;
+}
+.information-list li .infor-type{
+	height: 0.55rem;
+	line-height: 0.55rem;
+	overflow: hidden;
+}
+.information-list li .infor-type .date{
+	font-size: 0.26rem;
+	color: #636A7D;
+	float: right;
+}
+.information-list li .infor-title{
+	height: 0.45rem;
+	line-height: 0.45rem;
+	overflow: hidden;
+	font-size: 0.28rem;
+	color: #636A7D;
+}
+.information-list li input[type="checkbox"]{
+	position: absolute;
+	left: 0.12rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.check-all{
+	line-height: 1.0rem;
+	font-size: 0.3rem;
+	margin-left: 0.3rem;
+}
+.check-all input[type="checkbox"]{
+	vertical-align: -0.1rem;
+}

@@ -1,0 +1,77 @@
+/*输入提示为浅灰色*/
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #CDCFDB; 
+font-weight: 100;
+font-family: "微软雅黑";
+}
+input:-ms-input-placeholder {
+color: #CDCFDB;
+font-weight: 100;
+font-family: "微软雅黑";
+}
+input::-webkit-input-placeholder {
+color: #CDCFDB;
+font-weight: 100;
+font-family: "微软雅黑";
+}
+
+.message{
+	font-size: 0.3rem;
+	color: #2E2B51;
+	margin: 0.2rem 0;
+	
+}
+.title{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-weight: bold;
+	padding: 0 0.2rem;
+}
+.mess-con{
+	background-color: #FFFFFF;
+}
+.mess-con p{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.25rem 0.3rem;
+}
+.mess-con p span{
+	margin-left: 0.1rem;
+}
+.mess-con input[type="radio"]{
+	margin-right: 0.1rem;
+}
+.mess-con input[type="text"]{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	width: auto;
+	font-size: 0.3rem;
+}
+.mess-con p label{
+	margin-right: 0.3rem;
+}
+.mess-con p a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.message select{
+	/*很关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url(../../img/back_g.png) no-repeat scroll right center transparent;
+    background-size: 0.4rem 0.4rem;
+    padding-right: 0.4rem;
+	border: none;
+	float: right;
+	text-align: right;
+	font-size: 0.30rem;
+	font-family: "微软雅黑";
+	color: #2E2B51;
+	-webkit-appearance: listbox; 
+}
+.message select option{
+	line-height: 0.8rem;
+}
