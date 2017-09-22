@@ -10,6 +10,7 @@
 		};
 	win.addEventListener(evt, fn, false);
 	doc.addEventListener("DOMContentLoaded", fn, false);
+	fn();
 }(document, window));*/
 
 
